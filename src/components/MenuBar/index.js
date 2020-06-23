@@ -1,4 +1,5 @@
 import React from 'react';
+// import Logo from '../Logo';
 
 import { Home } from "@styled-icons/entypo/Home";
 import { User } from "@styled-icons/boxicons-solid/User";
@@ -13,14 +14,7 @@ import * as S from "./styled";
 const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
-      <S.MenuBarGroup>
-        <S.MenuBarItem title="Mudar o tema">
-          <LightDown />
-        </S.MenuBarItem>
-        <S.MenuBarItem title="Mudar visualização">
-          <Search />
-        </S.MenuBarItem>
-      </S.MenuBarGroup>
+      {/* <Logo /> */}
       <S.MenuBarGroup>
         <S.MenuBarLink to="/" title="Voltar para a Home">
             <S.MenuBarItem><Home /></S.MenuBarItem>
@@ -34,6 +28,14 @@ const MenuBar = () => {
         <S.MenuBarLink to="/contact" title="Contato">
             <S.MenuBarItem><Contact /></S.MenuBarItem>
         </S.MenuBarLink>
+      </S.MenuBarGroup>
+      <S.MenuBarGroup>
+        <S.MenuBarItem title="Mudar o tema">
+          <LightDown />
+        </S.MenuBarItem>
+        <S.MenuBarItem title="Mudar visualização">
+          <Search />
+        </S.MenuBarItem>
       </S.MenuBarGroup>
     </S.MenuBarWrapper>
   );

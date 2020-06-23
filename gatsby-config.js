@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Antonio Marcos`,
-    description: `Meu portfólio e meu espaço para compartilhar conhecimento sobre o mundo JS.`,
+    description: `Meu portfólio e meu espaço para compartilhar conhecimento sobre a comunidade em volta do JS e do Desenvolvimento Front-End.`,
     author: `@gatsbyjs`,
     position: `Desenvolvedor Front-End`
   },
@@ -14,6 +14,19 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: []
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
