@@ -5,6 +5,7 @@ import { LeftArrowAlt as Left } from "@styled-icons/boxicons-regular/LeftArrowAl
 import { RightArrowAlt as Right } from "@styled-icons/boxicons-regular/RightArrowAlt";
 
 import * as S from "./styled";
+import getThemeColor from '../../utils/getThemeColor';
 
 const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
@@ -14,7 +15,7 @@ const RecommendedPosts = ({ next, previous }) => (
         className="previous"
         cover
         direction="left"
-        bg="#333333"
+        bg={getThemeColor()}
         duration={0.6}
       >
         <Left size={30} />
@@ -28,7 +29,7 @@ const RecommendedPosts = ({ next, previous }) => (
         className="next"
         cover
         direction="right"
-        bg="#333333"
+        bg={getThemeColor()}
         duration={0.6}
       >
         {next.frontmatter.title}

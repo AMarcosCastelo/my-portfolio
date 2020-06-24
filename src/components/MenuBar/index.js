@@ -6,6 +6,7 @@ import { LightDown } from "@styled-icons/entypo/LightDown";
 import links from "./content";
 import Icons from "./icons";
 import SocialLinks from '../SocialLinks';
+import getThemeColor from "../../utils/getThemeColor";
 
 import * as S from "./styled";
 
@@ -32,7 +33,7 @@ const MenuBar = () => {
               to={link.url}
               cover
               direction="left"
-              bg="#333333"
+              bg={getThemeColor()}
               duration={0.6}
               activeClassName="active"
               title={link.labal}

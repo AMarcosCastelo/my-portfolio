@@ -3,6 +3,7 @@ import propTypes from "prop-types";
 import AniLink from 'gatsby-plugin-transition-link/Anilink';
 import { LeftArrowAlt as Left } from "@styled-icons/boxicons-regular/LeftArrowAlt";
 import { RightArrowAlt as Right } from "@styled-icons/boxicons-regular/RightArrowAlt";
+import getThemeColor from "../../utils/getThemeColor";
 
 import * as S from "./styled";
 
@@ -19,7 +20,7 @@ const Pagination = ({
       to={prevPage}
       cover
       direction="left"
-      bg="#333333"
+      bg={getThemeColor()}
       duration={0.6}
     ><Left size={30} /> página anterior</AniLink>}
     <p>
@@ -29,7 +30,7 @@ const Pagination = ({
       to={nextPage}
       cover
       direction="right"
-      bg="#333333"
+      bg={getThemeColor()}
       duration={0.6}
     >proxima página <Right size={30}  /></AniLink>}
   </S.PaginationWrapper>
