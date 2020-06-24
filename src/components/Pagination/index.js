@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from "prop-types";
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/Anilink';
 import { LeftArrowAlt as Left } from "@styled-icons/boxicons-regular/LeftArrowAlt";
 import { RightArrowAlt as Right } from "@styled-icons/boxicons-regular/RightArrowAlt";
 
@@ -15,11 +15,23 @@ const Pagination = ({
   nextPage,
 }) => (
   <S.PaginationWrapper>
-    {!isFirst && <Link to={prevPage}><Left size={30} /> página anterior</Link>}
+    {!isFirst && <AniLink
+      to={prevPage}
+      cover
+      direction="left"
+      bg="#333333"
+      duration={0.6}
+    ><Left size={30} /> página anterior</AniLink>}
     <p>
       {currentPage} de {numPages}
     </p>
-    {!isLast && <Link to={nextPage}>proxima página <Right size={30}  /></Link>}
+    {!isLast && <AniLink
+      to={nextPage}
+      cover
+      direction="right"
+      bg="#333333"
+      duration={0.6}
+    >proxima página <Right size={30}  /></AniLink>}
   </S.PaginationWrapper>
 )
 

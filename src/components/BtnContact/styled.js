@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/Anilink';
 
-export const Btn = styled(Link)`
+export const Btn = styled(AniLink)`
   cursor: pointer;
   text-align: center;
   padding: 1rem 1.75rem;

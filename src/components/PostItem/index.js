@@ -5,7 +5,13 @@ import * as S from "./styled";
 
 const PostItem = ({ slug, background, category, date, timeToRead, title, description}) => {
   return (
-    <S.PostItemLink to={slug}>
+    <S.PostItemLink
+      to={slug}
+      cover
+      direction="right"
+      bg="#333333"
+      duration={0.6}
+    >
       <S.PostItemWrapper>
         <S.PostItemTag background={background}>{category}</S.PostItemTag>
         <S.PostItemInfo>
