@@ -7,9 +7,6 @@ import * as S from "./styled";
 
 const SocialLinks = () => (
   <S.SocialLinksWrapper>
-    <S.SocialLinksTitle>
-      SOCIAL MEDIA
-    </S.SocialLinksTitle>
     <S.SocialLinksList>
       {links.map((link, i) => {
         const Icon = Icons[link.label];

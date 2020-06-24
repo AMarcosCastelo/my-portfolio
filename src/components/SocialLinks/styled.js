@@ -6,32 +6,35 @@ export const SocialLinksWrapper = styled.nav`
 `;
 
 export const SocialLinksList = styled.ul`
-  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
 `;
 
-export const SocialLinksTitle = styled.h2`
-  color: #DBDBDB;
-  padding: 1rem;
-  font-size: 1.32rem;
+// export const SocialLinksTitle = styled.h2`
+//   color: #DBDBDB;
+//   padding: 1rem;
+//   font-size: 1.32rem;
+// `;
+
+export const SocialLinksItem = styled.li`
+  padding: 0.2rem;
 `;
 
-export const SocialLinksItem = styled.li``;
-
 export const SocialLinksLink = styled.a`
-  color: #BDBDBD;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: #08FDD8;
+    color: var(--highlight);
   }
 `;
 
 export const IconWrapper = styled.div`
-  fill: #bbb;
+  fill: #242424;
   width: 30px;
   height: 30px;
 `;

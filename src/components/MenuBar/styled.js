@@ -3,16 +3,16 @@ import { Link } from "gatsby";
 
 export const MenuBarWrapper = styled.aside`
   align-items: center;
-  background: #08FDD8;
-  border-left: 1px solid #38444d;
+  background: var(--menuBarColor);
+  border-right: 1px solid var(--borders);
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  padding: 0.8rem 0;
+  padding: 0.2rem 0;
   position: fixed;
   left: 0;
-  width: 5.75rem;
+  width: 4.75rem;
 `;
 
 export const MenuBarGroup = styled.div`
@@ -25,14 +25,16 @@ export const MenuBarLink = styled(Link)`
 `;
 
 export const MenuBarItem = styled.span`
-  color: #333333;
+  color: var(--texts);
   cursor: pointer;
   display: block;
   height: 3.75rem;
-  padding: 1.1rem;
+  padding: 0.9rem;
   position: relative;
   width: 3.75rem;
+  transition: color 0.5s;
+  
   &:hover {
-    color: #fff;
+    color: var(--highlight);
   }
 `;

@@ -5,8 +5,8 @@ export const LayoutWrapper = styled.section`
 `;
 
 export const LayoutMain = styled.main`
-  background: #242424;
+  background: var(--background);
   min-height: 100vh;
-  padding: 0 0 0 6rem;
+  padding: 0 0 0 4rem;
   width: 100%;
 `;

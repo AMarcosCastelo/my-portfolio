@@ -9,13 +9,13 @@ export const CommentsWrapper = styled.section`
   }
   #disqus_thread {
     a {
-      color: #08FDD8 !important;
+      color: var(--titlesText) !important;
     }
   }
 `
 
 export const CommentsTitle = styled.h2`
-  color: #bdbdbd;
+  color: var(--titlesText);
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;

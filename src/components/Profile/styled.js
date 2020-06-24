@@ -2,19 +2,19 @@ import styled from 'styled-components';
 import { Link } from "gatsby";
 
 export const ProfileWrapper = styled.section`
-  color: #BDBDBD;
+  color: var(--texts);
   display: flex;
   flex-direction: column;
 `;
 
 export const ProfileLink = styled(Link)`
-  color: #BDBDBD;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
   cursor: pointer;
   
   &:hover {
-    color: #08FDD8;
+    color: var(--highlight);
   }
 `;
 
