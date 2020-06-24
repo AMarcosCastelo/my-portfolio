@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import AniLink from 'gatsby-plugin-transition-link/Anilink';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const Btn = styled(AniLink)`
   cursor: pointer;

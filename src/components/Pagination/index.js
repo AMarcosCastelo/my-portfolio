@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from "prop-types";
-import AniLink from 'gatsby-plugin-transition-link/Anilink';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { LeftArrowAlt as Left } from "@styled-icons/boxicons-regular/LeftArrowAlt";
 import { RightArrowAlt as Right } from "@styled-icons/boxicons-regular/RightArrowAlt";
 import getThemeColor from "../../utils/getThemeColor";
