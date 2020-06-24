@@ -5,8 +5,9 @@ module.exports = {
   siteMetadata: {
     title: `Antonio Marcos`,
     description: `Meu portfólio e meu espaço para compartilhar conhecimento sobre a comunidade em volta do JS e do Desenvolvimento Front-End.`,
-    author: `@gatsbyjs`,
-    position: `Desenvolvedor Front-End`
+    author: `Antonio Marcos Castelo de Carvalho`,
+    position: `Desenvolvedor Front-End`,
+    siteUrl: `https://amarcoscastelo.com.br`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -72,17 +73,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Antonio Marcos`,
+        short_name: `AM`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#242424`,
+        theme_color: `#242424`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/AM-Ptr.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

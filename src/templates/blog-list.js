@@ -16,7 +16,7 @@ const BlogList = (props) => {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Blog"/>
       {postList.map(({
         node: {
           frontmatter: { 
@@ -68,6 +68,7 @@ export const query = graphql`
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
             title
+            image
           }
           timeToRead
           fields {
