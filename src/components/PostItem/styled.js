@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
 import { Link } from "gatsby";
 
 export const PostItemLink = styled(Link)`
@@ -8,6 +9,12 @@ export const PostItemLink = styled(Link)`
   &:hover {
     color: var(--highlight);
   }
+
+  ${media.lessThan("medium")`
+    align-items: flex-start;
+    flex-direction: column;
+    /* padding: 2rem 1rem; */
+  `}
 `;
 
 export const PostItemWrapper = styled.section`
@@ -30,6 +37,19 @@ export const PostItemTag = styled.div`
   min-height: 90px;
   min-width: 90px;
   text-transform: uppercase;
+
+  ${media.lessThan("medium")`
+    border-radius: 0;
+    font-size: 1rem;
+    min-height: auto;
+    min-width: auto;
+    padding: .2rem .5rem;
+    margin-bottom: .7rem;
+  `}
+
+  ${media.lessThan("medium")`
+    margin: 0;
+  `}
 `;
 
 export const PostItemInfo = styled.div`

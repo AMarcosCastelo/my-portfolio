@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import Img from 'gatsby-image';
 
 export const HomeWrapper = styled.section`
@@ -32,6 +33,9 @@ export const HomeImageWrapper = styled.div`
   justify-content: flex-end;
   width: 50%;
   height: 100vh;
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `;
 
 export const ImageBox = styled.div`

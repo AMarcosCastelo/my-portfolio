@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
 import { Link } from "gatsby";
 
 export const MenuBarWrapper = styled.aside`
@@ -13,11 +14,30 @@ export const MenuBarWrapper = styled.aside`
   position: fixed;
   left: 0;
   width: 4.75rem;
+
+  ${media.lessThan("large")`
+    border-right: none;
+    border-bottom: 1px solid var(--borders);
+    top: 0;
+    flex-direction: row;
+    height: auto;
+    padding: 0 1rem;
+    width: 100%;
+    justify-content: space-between;
+  `}
+
+  ${media.lessThan("medium")`
+    justify-content: flex-end;
+  `}
 `;
 
 export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("large")`
+    flex-direction: row;
+  `}
 `;
 
 export const MenuBarLink = styled(Link)`
