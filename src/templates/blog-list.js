@@ -30,7 +30,7 @@ const BlogList = (props) => {
           fields: { slug },
         }
       }, index) => (
-        <PostItem
+        slug !== '/about/' && <PostItem
           key={index}
           slug={slug}
           background={background}
