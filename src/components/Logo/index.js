@@ -6,17 +6,17 @@ import * as S from "./styled";
 const Logo = () => {
   const { logoImage } = useStaticQuery(graphql`
     query {
-      logoImage: file(relativePath: {eq: "AM-3.png"}) {
+      logoImage: file(relativePath: {eq: "AM-Ptr.png"}) {
         childImageSharp {
-          fluid(maxWidth: 60) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 44, height: 35) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `);
   return (
-    <S.LogoWrapper fluid={logoImage.childImageSharp.fluid} />
+    <S.LogoWrapper fixed={logoImage.childImageSharp.fixed} />
   );
 };
 

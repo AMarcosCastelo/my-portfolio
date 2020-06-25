@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import Logo from '../Logo';
+import Logo from '../Logo';
 import { LightUp } from "@styled-icons/entypo/LightUp";
 import { LightDown } from "@styled-icons/entypo/LightDown";
 
@@ -22,7 +22,7 @@ const MenuBar = () => {
 
   return (
     <S.MenuBarWrapper>
-      {/* <Logo /> */}
+      <Logo />
       <S.MenuBarGroup>
         {links.map((link, i) => {
           const Icon = Icons[link.name];

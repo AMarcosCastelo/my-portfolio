@@ -10,7 +10,7 @@ export const MenuBarWrapper = styled.aside`
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  padding: 0.2rem 0;
+  padding: 1rem 0;
   position: fixed;
   left: 0;
   width: 4.75rem;
@@ -23,15 +23,16 @@ export const MenuBarWrapper = styled.aside`
     height: auto;
     padding: 0 1rem;
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   `}
 
   ${media.lessThan("medium")`
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
   `}
 `;
 
 export const MenuBarGroup = styled.div`
+  color: var(--texts);
   display: flex;
   flex-direction: column;
 
@@ -41,15 +42,15 @@ export const MenuBarGroup = styled.div`
 `;
 
 export const MenuBarLink = styled(AniLink)`
+  color: var(--texts);
   display: block;
 
   &.active {
-    color: var(--highlight) !important;
+    color: var(--highlight);
   }
 `;
 
 export const MenuBarItem = styled.span`
-  color: var(--texts);
   cursor: pointer;
   display: block;
   height: 3.75rem;
