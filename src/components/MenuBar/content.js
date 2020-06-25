@@ -6,22 +6,22 @@ const links = [
   },
   {
     label: "Sobre mim",
-    url: "/about",
+    url: "/about/",
     name: "About"
   },
   {
     label: "Contato",
-    url: "/contact",
+    url: "/contact/",
     name: "Contact"
   },
   {
     label: "Blog",
-    url: "/blog",
+    url: "/blog/",
     name: "Blog"
   },
   {
     label: "Procurar no blog",
-    url: "/search",
+    url: "/search/",
     name: "Search"
   },
 ];

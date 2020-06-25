@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import * as S from "./styled";
+import getThemeColor from '../../utils/getThemeColor';
 
 const Logo = () => {
   const { logoImage } = useStaticQuery(graphql`
@@ -16,7 +17,15 @@ const Logo = () => {
     }
   `);
   return (
-    <S.LogoWrapper fixed={logoImage.childImageSharp.fixed} />
+    <S.LogoLink
+      to="/"
+      cover
+      direction="left"
+      bg={getThemeColor()}
+      duration={0.6}
+    >
+      <S.LogoWrapper fixed={logoImage.childImageSharp.fixed} />
+    </S.LogoLink>
   );
 };
 

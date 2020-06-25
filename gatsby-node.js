@@ -65,15 +65,26 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(({node, next, previous}) => {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve("./src/templates/blog-post.js"),
-        context: {
-          slug: node.fields.slug,
-          previousPost: previous,
-          nextPost: next
-        }
-      });
+      if (node.fields.slug !== '/about/') {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve("./src/templates/blog-post.js"),
+          context: {
+            slug: node.fields.slug,
+            previousPost: previous,
+            nextPost: next
+          }
+        });
+      } else if (node.fields.slug === '/about/') {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve("./src/templates/about.js"),
+          context: {
+            slug: node.fields.slug,
+          }
+        });
+      }
+      
     });
 
     const postsPerPage= 6;

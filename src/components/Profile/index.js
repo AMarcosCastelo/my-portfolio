@@ -4,16 +4,14 @@ import Avatar from '../Avatar';
 
 import * as S from "./styled";
 
-const Profile = () => {
+const Profile = ({ profileTitle }) => {
   const {site : {
-    siteMetadata: {title, position, description}
+    siteMetadata: {title }
   }} = useStaticQuery(graphql`
     query MySiteMetadata {
       site {
         siteMetadata {
-          title,
-          position,
-          description
+          title
         }
       }
     }
@@ -21,14 +19,13 @@ const Profile = () => {
 
   return (
     <S.ProfileWrapper>
-      <S.ProfileLink>
+      <S.ProfileAvatar>
         <Avatar />
-        <S.ProfileAuthor>
-          {title}
-          <S.ProfilePosition>{position}</S.ProfilePosition>
-        </S.ProfileAuthor>
-      </S.ProfileLink>
-      <S.ProfileDescription>{description}</S.ProfileDescription>
+      </S.ProfileAvatar>
+      <S.ProfileAuthor>
+        {console.log(profileTitle)}
+        {profileTitle ? profileTitle : title}
+      </S.ProfileAuthor>
     </S.ProfileWrapper>
   );
 };
