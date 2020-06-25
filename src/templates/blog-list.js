@@ -30,7 +30,7 @@ const BlogList = (props) => {
           fields: { slug },
         }
       }, index) => (
-        slug !== '/about/' && <PostItem
+        <PostItem
           key={index}
           slug={slug}
           background={background}
@@ -59,6 +59,7 @@ export const query = graphql`
         sort: {fields: frontmatter___date, order: DESC}
         limit: $limit
         skip: $skip
+        filter: {fields: {slug: {ne: "/about/"}}}
       ) {
       edges {
         node {

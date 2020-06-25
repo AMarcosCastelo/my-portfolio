@@ -11,7 +11,7 @@ const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
     {previous && (
       <S.RecommendedLink
-        to={previous.fields.slug}
+        to={`/blog${previous.fields.slug}`}
         className="previous"
         cover
         direction="left"
@@ -25,7 +25,7 @@ const RecommendedPosts = ({ next, previous }) => (
 
     {next && (
       <S.RecommendedLink
-        to={next.fields.slug}
+        to={`/blog${next.fields.slug}`}
         className="next"
         cover
         direction="right"

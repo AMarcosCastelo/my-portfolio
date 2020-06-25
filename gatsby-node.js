@@ -60,14 +60,14 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    }
+    }  
   `).then((result) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(({node, next, previous}) => {
       if (node.fields.slug !== '/about/') {
         createPage({
-          path: node.fields.slug,
+          path: `/blog${node.fields.slug}`,
           component: path.resolve("./src/templates/blog-post.js"),
           context: {
             slug: node.fields.slug,
@@ -92,7 +92,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     Array.from({length: numPages}).forEach((_, index) => {
       createPage({
-        path: index === 0 ? '/blog' : `/blog/page/${index + 1}`,
+        path: index === 0 ? '/blog/' : `/blog/page/${index + 1}`,
         component: path.resolve("./src/templates/blog-list.js"),
         context: {
           limit: postsPerPage,

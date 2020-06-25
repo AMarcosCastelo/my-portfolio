@@ -7,7 +7,7 @@ import * as S from "./styled";
 const PostItem = ({ slug, background, category, date, timeToRead, title, description}) => {
   return (
     <S.PostItemLink
-      to={slug}
+      to={`/blog${slug}`}
       cover
       direction="right"
       bg={getThemeColor()}

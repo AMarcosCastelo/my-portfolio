@@ -10,8 +10,8 @@ import * as S from "../components/Post/styled";
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark;
-  const next = pageContext.nextPost;
-  const previous= pageContext.previousPost;
+  const next = pageContext.nextPost && (pageContext.nextPost.fields.slug !== '/about/' ? pageContext.nextPost : false);
+  const previous= pageContext.previousPost && (pageContext.previousPost.fields.slug !== '/about/' ? pageContext.previousPost : false);
 
   return (
     <Layout>
@@ -20,6 +20,7 @@ const BlogPost = ({ data, pageContext }) => {
         description={post.frontmatter.description}
         image={post.frontmatter.image}
       />
+      {console.log(pageContext.previousPost)}
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} - {post.timeToRead} min de Leitura
