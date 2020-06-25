@@ -1,29 +1,27 @@
 require("dotenv").config();
 
 const postsQuery =  `
-{
-  posts: allMarkdownRemark(
-      sort: {fields: frontmatter___date, order: DESC}
-    ) {
-    edges {
-      node {
-        objectID: id
-        frontmatter {
-          category
-          date_timestamp: date
-          date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-          description
-          title
-          background
-        }
-        excerpt(pruneLength: 5000)
-        fields {
-          slug
+  {
+    posts: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, filter: {fields: {slug: {ne: "/about/"}}}) {
+      edges {
+        node {
+          objectID: id
+          frontmatter {
+            category
+            date_timestamp: date
+            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+            description
+            title
+            background
+          }
+          excerpt(pruneLength: 5000)
+          fields {
+            slug
+          }
         }
       }
     }
   }
-}
 `;
 
 const flatten = (arr) =>
