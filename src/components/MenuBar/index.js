@@ -36,7 +36,7 @@ const MenuBar = () => {
               bg={getThemeColor()}
               duration={0.6}
               activeClassName="active"
-              title={link.labal}
+              title={link.label}
             >
               <S.MenuBarItem><Icon /></S.MenuBarItem>
             </S.MenuBarLink>
