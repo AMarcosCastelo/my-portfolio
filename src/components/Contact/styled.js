@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
+import Img from 'gatsby-image';
 
 export const ContactWrapper = styled.section`
   display: flex;
@@ -6,17 +8,30 @@ export const ContactWrapper = styled.section`
 `;
 
 export const ContactFormWrapper = styled.div`
-  /* height: 100vh; */
+  height: 100%;
+  width: 100%;
+  max-width: 70vh;
 `;
 
+export const ContactSocialMedia = styled.div`
+
+`;
+
+export const ContactSocialDescription = styled.p`
+  color: var(--texts);
+  padding: 0.75rem 0;
+  font-weight: 300;
+  font-size: 1.255rem;
+`;
 
 export const ContactFieldset = styled.fieldset`
-  padding: 3rem 0;
+  padding: 3rem 0 0;
+  width: 100%;
 `;
 
 export const ContactForm = styled.form`
   color: var(--texts);
-  width: 60vh;
+  width: 100%;
 `;
 
 export const FieldGroup = styled.div`
@@ -28,43 +43,90 @@ export const FieldGroup = styled.div`
   }
 `;
 
+export const FormLabel = styled.label`
+  font-size: 1.125rem;
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - .5rem);
+  left: 0;
+  margin-top: 0.813rem;
+  transition: all .3s ease-out;
+`;
+
+export const FormInput = styled.input`
+  border: 0;
+  padding: 0.6rem 0;
+  color: var(--texts);
+  border-bottom: 2px solid var(--texts);
+  background: transparent;
+  outline: none;
+  font-size: 1.125rem;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  /* height: */
+
+  &:focus{
+    border-bottom: 2px solid var(--highlight);
+  }
+
+  ${FormLabel} &::placeholder{
+    color:transparent;
+  }
+
+  &:focus + ${FormLabel}, &:not(:placeholder-shown) + ${FormLabel}{
+    font-size: 0.938rem;
+    margin-top: 0;
+    top: 0;
+    color: var(--highlight);
+  }
+`;
+
 export const Field = styled.div`
+  position: relative;
+  padding-top: 13px;
   display: flex;
   flex-direction: column;
   margin-right: 10px;
   padding-top: 13px;
+  margin-bottom: 1.5rem;
 `;
 
-export const FormLabel = styled.label`
-  font-size: 1.2rem;
-  padding: 1rem 0;
-`;
-
-export const FormInput = styled.input`
-  font-size: 1rem;
-  padding: 0 0.75rem;
-  height: 3rem;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  background: #bdbdbd;
-  outline: none;
+export const LabelTextArea = styled.label`
+  font-size: 1.125rem;
+  padding: 1rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0.813rem;
   transition: all .3s ease-out;
 
-  &:hover {
-    border: 2px solid var(--highlight);
+  & ${FormInput}::placeholder{
+    color:transparent;
   }
 `;
 
 export const TextArea = styled.textarea`
-  width: 100%;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  background: #bdbdbd;
+  border: 0;
+  padding: 1rem;
+  color: var(--texts);
+  border: 2px solid var(--texts);
+  background: transparent;
   outline: none;
-  padding: 0.2rem;
+  font-size: 1.125rem;
+  transition: all .3s ease-out;
+  border-radius: 0;
 
-  &:hover {
+  &:focus{
     border: 2px solid var(--highlight);
+  }
+
+  &:focus + ${LabelTextArea}, &:not(:placeholder-shown) + ${LabelTextArea}{
+    font-size: 0.938rem;
+    margin-top: 0;
+    top: -1.25rem;
+    left: -0.938rem;
+    color: var(--highlight);
   }
 `;
 
@@ -75,6 +137,7 @@ export const ContactFormTitle = styled.h1`
 export const BtnDiv = styled.div`
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 `;
 
 export const ButtonForm = styled.button`
@@ -91,4 +154,24 @@ export const ButtonForm = styled.button`
   }
 `;
 
-export const ContactMapWrapper = styled.section``;
+export const ContactImageWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100vh;
+  padding: 3rem 0 0 3rem;
+  ${media.lessThan("large")`
+    display: none;
+  `}
+`;
+
+export const ImageBox = styled.div`
+  width: 100%;
+`;
+
+export const ContactImage = styled(Img)`
+  display: block;
+  max-width: 620px;
+  margin: auto;
+`;

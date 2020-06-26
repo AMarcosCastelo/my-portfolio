@@ -33,6 +33,7 @@ export const HomeImageWrapper = styled.div`
   justify-content: flex-end;
   width: 50%;
   height: 100vh;
+  padding-right: 4rem;
   ${media.lessThan("large")`
     display: none;
   `}
