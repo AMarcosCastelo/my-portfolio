@@ -26,7 +26,6 @@ const GlobalStyles = createGlobalStyle`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    box-sizing: border-box;
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
@@ -62,6 +61,11 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  * {
+    outline: none;
+    box-sizing: border-box;
   }
 
   body.dark {

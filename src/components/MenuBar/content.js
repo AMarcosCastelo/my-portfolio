@@ -10,11 +10,6 @@ const links = [
     name: "About"
   },
   {
-    label: "Contato",
-    url: "/contact/",
-    name: "Contact"
-  },
-  {
     label: "Blog",
     url: "/blog/",
     name: "Blog"
@@ -23,6 +18,11 @@ const links = [
     label: "Procurar no blog",
     url: "/search/",
     name: "Search"
+  },
+  {
+    label: "Contato",
+    url: "/contact/",
+    name: "Contact"
   },
 ];
 
