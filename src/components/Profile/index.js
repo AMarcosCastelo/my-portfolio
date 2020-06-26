@@ -23,7 +23,6 @@ const Profile = ({ profileTitle }) => {
         <Avatar />
       </S.ProfileAvatar>
       <S.ProfileAuthor>
-        {console.log(profileTitle)}
         {profileTitle ? profileTitle : title}
       </S.ProfileAuthor>
     </S.ProfileWrapper>

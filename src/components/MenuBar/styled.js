@@ -23,12 +23,33 @@ export const MenuBarWrapper = styled.aside`
     height: auto;
     padding: 0 1rem;
     width: 100%;
-    /* justify-content: space-between; */
+  `}
+`;
+
+export const MenuToggle = styled.div`
+  ${media.lessThan("small")`
+    align-items: center;
+    background: var(--menuBarColor);
+    position: fixed;
+    top: 3.8rem;
+    left: 100%;
+    transition: all .3s linear;
+    opacity: 0;
+    width: 100%;
   `}
 
-  ${media.lessThan("medium")`
-    /* justify-content: flex-end; */
+  ${media.greaterThan("small")`
+    width: auto;
   `}
+
+  &.show {
+    background: var(--menuBarColor);
+    left:0;
+    opacity: 1;
+    ${media.lessThan("small")`
+      width: 100%;
+    `}
+  }
 `;
 
 export const MenuBarGroup = styled.div`
@@ -39,6 +60,26 @@ export const MenuBarGroup = styled.div`
   ${media.lessThan("large")`
     flex-direction: row;
   `}
+
+  ${media.lessThan("small")`
+    justify-content: space-between;
+  `}
+
+  &#socialLinks {
+    ${media.lessThan("medium")`
+      display: none
+    `}
+  }
+
+  &#menuIcon {
+    display: none;
+  }
+
+  &#menuIcon {
+    ${media.lessThan("small")`
+      display: block;
+    `}
+  }
 `;
 
 export const MenuBarLink = styled(AniLink)`

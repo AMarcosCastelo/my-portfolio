@@ -5,10 +5,6 @@ export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;
   width: 100%;
 
-  ${media.lessThan("medium")`
-    display: none;
-  `}
-
   ${media.lessThan("large")`
     margin: 0;
   `}
