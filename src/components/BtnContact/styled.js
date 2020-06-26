@@ -12,6 +12,7 @@ export const Btn = styled(AniLink)`
   width: 15rem;
   text-decoration: none;
   transition: background 0.5s;
+
   &:hover {
     background: var(--highlight);
     color: var(--colorHoverBtn);

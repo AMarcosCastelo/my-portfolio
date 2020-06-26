@@ -14,7 +14,39 @@ export const ContactFormWrapper = styled.div`
 `;
 
 export const ContactSocialMedia = styled.div`
+  width: 100%;
+  display: flex;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 
+export const ContactLinksList = styled.ul`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+`;
+
+export const ContactLinksItem = styled.li`
+
+`;
+
+export const ContactLinksLink = styled.a`
+  color: var(--texts);
+  text-decoration: none;
+  transition: color 0.5s;
+
+  &:hover {
+    color: var(--highlight);
+  }
+`;
+
+export const IconWrapper = styled.div`
+  fill: #242424;
+  width: 30px;
+  height: 30px;
 `;
 
 export const ContactSocialDescription = styled.p`
@@ -86,8 +118,8 @@ export const Field = styled.div`
   padding-top: 13px;
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
-  padding-top: 13px;
+  margin-right: 0.625rem;
+  padding-top: 0.813rem;
   margin-bottom: 1.5rem;
 `;
 
@@ -147,6 +179,7 @@ export const ButtonForm = styled.button`
   border: 2px solid var(--highlight);
   padding: 1rem 1.5rem;
   font-size: 1rem;
+  margin-right: 0.625rem;
 
   &:hover {
     color: #242424;

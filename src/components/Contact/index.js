@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import SocialLinks from "../SocialLinks";
+import links from '../SocialLinks/content';
+import Icons from '../SocialLinks/icons';
 
 import * as S from './styled';
 
@@ -73,9 +74,24 @@ const Contact = () => {
         </S.ContactForm>
         <S.ContactSocialMedia>
           <S.ContactSocialDescription>
-            Você também pode entrar em contato comigo por algum das minhas redes sociais.
+            Você também pode entrar em contato comigo por alguma das minhas redes sociais.
           </S.ContactSocialDescription>
-          <SocialLinks />
+          <S.ContactSocialMedia>
+            <S.ContactLinksList>
+              {links.map((link, i) => {
+                const Icon = Icons[link.label];
+                return(
+                  <S.ContactLinksItem key={i}>
+                    <S.ContactLinksLink href={link.url} title={link.label} target="_blank" rel="noopener norefer" >
+                      <S.IconWrapper>
+                        <Icon />
+                      </S.IconWrapper>
+                    </S.ContactLinksLink>
+                  </S.ContactLinksItem>
+                )
+              })}
+            </S.ContactLinksList>
+          </S.ContactSocialMedia>
         </S.ContactSocialMedia>
       </S.ContactFormWrapper>
       <S.ContactImageWrapper>
