@@ -8,7 +8,7 @@ export const MenuBarWrapper = styled.aside`
   border-right: 1px solid var(--borders);
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: space-between;
   padding: 1rem 0;
   position: fixed;

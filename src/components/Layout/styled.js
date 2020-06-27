@@ -12,7 +12,7 @@ export const LayoutWrapper = styled.section`
 export const LayoutMain = styled.main`
   background: var(--background);
   min-height: 100vh;
-  padding: 0 0 0 4rem;
+  padding: 0 0 0 5rem;
   width: 100%;
 
   ${media.lessThan("large")`
