@@ -5,8 +5,9 @@ import Img from 'gatsby-image';
 export const HomeWrapper = styled.section`
   display: flex;
   padding: 2rem 1.4rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100vh;
+  z-index: 100;
 
   ${media.lessThan("large")`
     height: calc(100vh - 6rem);
@@ -27,6 +28,7 @@ export const HomeGroup = styled.div`
   padding: 4rem;
   width: 50rem;
   height: calc(100vh - 6rem);
+  z-index: 100;
 
   ${media.lessThan("medium")`
     display: flex;
@@ -43,6 +45,7 @@ export const HomeTitle = styled.h1`
   font-weight: 700;
   margin: 1rem auto;
   color: var(--white);
+  z-index: 100;
 
   ${media.lessThan("small")`
     font-size: 1.7rem;
@@ -59,6 +62,7 @@ export const HomeDescription = styled.p`
   color: var(--texts);
   font-size: 1.5rem;
   margin-bottom: 4rem;
+  z-index: 100;
 
   ${media.lessThan("small")`
     font-size: 1rem;
@@ -73,6 +77,7 @@ export const HomeImageWrapper = styled.div`
   width: 50%;
   height: 100%;
   padding-right: 4rem;
+  z-index: 100;
   ${media.lessThan("large")`
     display: none;
   `}
@@ -86,4 +91,5 @@ export const HomeImage = styled(Img)`
   display: block;
   max-width: 620px;
   margin: auto;
+  z-index: 100;
 `;

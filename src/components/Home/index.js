@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import BtnContact from '../BtnContact';
+import Squares from '../Squares';
 
 import * as S from "./styled";
 
@@ -24,18 +25,21 @@ const ImgLogo = () => {
 
 const Home = () => {
   return (
-    <S.HomeWrapper>
-      <S.HomeGroup>
-        <S.HomeTitle>Olá, <br/> eu sou Antonio Marcos, <br/>  Desenvolvedor Web <br/> Front End</S.HomeTitle>
-        <S.HomeDescription>Desenvolvedor Front-End | Freelancer</S.HomeDescription>
-        <BtnContact />
-      </S.HomeGroup>
-      <S.HomeImageWrapper>
-        <S.ImageBox>
-          <ImgLogo />
-        </S.ImageBox>
-      </S.HomeImageWrapper>
-    </S.HomeWrapper>
+    <>
+      <S.HomeWrapper>
+        <S.HomeGroup>
+          <S.HomeTitle>Olá, <br/> eu sou Antonio Marcos, <br/>  Desenvolvedor Web <br/> Front End</S.HomeTitle>
+          <S.HomeDescription>Desenvolvedor Front-End | Freelancer</S.HomeDescription>
+          <BtnContact />
+        </S.HomeGroup>
+        <S.HomeImageWrapper>
+          <S.ImageBox>
+            <ImgLogo />
+          </S.ImageBox>
+        </S.HomeImageWrapper>
+      </S.HomeWrapper>
+      <Squares />
+    </>
   );
 }
 
