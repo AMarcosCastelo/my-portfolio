@@ -20,7 +20,6 @@ const BlogPost = ({ data, pageContext }) => {
         description={post.frontmatter.description}
         image={post.frontmatter.image}
       />
-      {console.log(pageContext.previousPost)}
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} - {post.timeToRead} min de Leitura
