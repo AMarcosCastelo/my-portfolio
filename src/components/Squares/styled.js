@@ -18,13 +18,14 @@ const up = keyframes`
 
 export const SquareItem = styled.li`
   z-index: 1;
+  opacity: 0;
   width: ${props => props.size}px;
   height: ${props => props.size}px;
   background-color: rgba(8, 253, 216, 0.15);
   display: block;
   position: absolute;
   left: ${props => props.position}%;
-  bottom: -${props => props.size}px;
+  bottom: ${props => props.size}px;
   animation: ${up} ${props => props.duration}s infinite;
   animation-direction: alternate;
   animation-delay: ${props => props.delay}s;

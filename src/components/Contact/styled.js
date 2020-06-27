@@ -4,13 +4,20 @@ import Img from 'gatsby-image';
 
 export const ContactWrapper = styled.section`
   display: flex;
-  padding: 2rem 4rem;
+  padding: 0 3rem;
+  z-index: 3;
+
+  ${media.lessThan("small")`
+    padding: 5rem 1rem;
+  `}
 `;
 
 export const ContactFormWrapper = styled.div`
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: calc(100vh + 6rem); */
   width: 100%;
-  max-width: 70vh;
 `;
 
 export const ContactSocialMedia = styled.div`
@@ -20,6 +27,7 @@ export const ContactSocialMedia = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 3;
 `;
 
 export const ContactLinksList = styled.ul`
@@ -27,6 +35,7 @@ export const ContactLinksList = styled.ul`
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  z-index: 3;
 `;
 
 export const ContactLinksItem = styled.li`
@@ -37,6 +46,7 @@ export const ContactLinksLink = styled.a`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
+  z-index: 3;
 
   &:hover {
     color: var(--highlight);
@@ -47,6 +57,7 @@ export const IconWrapper = styled.div`
   fill: #242424;
   width: 30px;
   height: 30px;
+  z-index: 3;
 `;
 
 export const ContactSocialDescription = styled.p`
@@ -54,25 +65,32 @@ export const ContactSocialDescription = styled.p`
   padding: 0.75rem 0;
   font-weight: 300;
   font-size: 1.255rem;
+  z-index: 3;
 `;
 
 export const ContactFieldset = styled.fieldset`
   padding: 3rem 0 0;
   width: 100%;
+  z-index: 3;
 `;
 
 export const ContactForm = styled.form`
   color: var(--texts);
   width: 100%;
+  z-index: 3;
 `;
 
 export const FieldGroup = styled.div`
   display: flex;
-  width: 100%;
 
-  .w50 {
+  ${media.lessThan("small")`
+    flex-direction: column;
+    width: 100%;
+  `}
+
+  /* .w50 {
     width: 50%;
-  }
+  } */
 `;
 
 export const FormLabel = styled.label`
@@ -83,6 +101,7 @@ export const FormLabel = styled.label`
   left: 0;
   margin-top: 0.813rem;
   transition: all .3s ease-out;
+  z-index: 3;
 `;
 
 export const FormInput = styled.input`
@@ -95,7 +114,8 @@ export const FormInput = styled.input`
   font-size: 1.125rem;
   transition: all .3s ease-out;
   border-radius: 0;
-  /* height: */
+  width: 100%;
+  z-index: 3;
 
   &:focus{
     border-bottom: 2px solid var(--highlight);
@@ -121,6 +141,7 @@ export const Field = styled.div`
   margin-right: 0.625rem;
   padding-top: 0.813rem;
   margin-bottom: 1.5rem;
+  width: 100%;
 `;
 
 export const LabelTextArea = styled.label`
@@ -132,6 +153,7 @@ export const LabelTextArea = styled.label`
   left: 0;
   margin-top: 0.813rem;
   transition: all .3s ease-out;
+  z-index: 3;
 
   & ${FormInput}::placeholder{
     color:transparent;
@@ -148,6 +170,7 @@ export const TextArea = styled.textarea`
   font-size: 1.125rem;
   transition: all .3s ease-out;
   border-radius: 0;
+  z-index: 3;
 
   &:focus{
     border: 2px solid var(--highlight);
@@ -164,6 +187,12 @@ export const TextArea = styled.textarea`
 
 export const ContactFormTitle = styled.h1`
   font-size: 3rem;
+  color: var(--titleHome);
+
+  ${media.lessThan("small")`
+    font-size: 1.9rem;
+  `}
+  z-index: 3;
 `;
 
 export const BtnDiv = styled.div`
@@ -180,6 +209,7 @@ export const ButtonForm = styled.button`
   padding: 1rem 1.5rem;
   font-size: 1rem;
   margin-right: 0.625rem;
+  z-index: 3;
 
   &:hover {
     color: #242424;
@@ -191,7 +221,7 @@ export const ContactImageWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+  min-width: 40vw;
   height: 100vh;
   padding: 3rem 0 0 3rem;
   ${media.lessThan("large")`

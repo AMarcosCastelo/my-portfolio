@@ -8,6 +8,7 @@ export const HomeWrapper = styled.section`
   /* justify-content: space-between; */
   height: 100vh;
   z-index: 100;
+  align-items: center;
 
   ${media.lessThan("large")`
     height: calc(100vh - 6rem);
@@ -25,25 +26,24 @@ export const HomeWrapper = styled.section`
 `;
 
 export const HomeGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding: 4rem;
   width: 50rem;
   height: calc(100vh - 6rem);
   z-index: 100;
 
   ${media.lessThan("medium")`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 1rem;
-    height: calc(100vh - 6rem);
-    justify-content: center;
   `}
 `;
 
 export const HomeTitle = styled.h1`
   font-size: 3rem;
   font-weight: 700;
-  margin: 1rem auto;
+  margin: 0;
   color: var(--titleHome);
   z-index: 100;
 
