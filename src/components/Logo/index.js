@@ -23,6 +23,7 @@ const Logo = () => {
       direction="left"
       bg={getThemeColor()}
       duration={0.6}
+      title="Home"
     >
       <S.LogoWrapper fixed={logoImage.childImageSharp.fixed} />
     </S.LogoLink>

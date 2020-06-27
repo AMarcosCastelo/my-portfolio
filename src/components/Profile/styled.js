@@ -1,11 +1,19 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const ProfileWrapper = styled.section`
   color: var(--texts);
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* flex-direction: column; */
+
+  ${media.lessThan("medium")`
+    flex-direction: column;
+  `}
+
+  ${media.lessThan("small")`
+    padding: 2rem 0 0 0;
+  `}
 `;
 
 export const ProfileAvatar = styled.div`
@@ -14,6 +22,7 @@ export const ProfileAvatar = styled.div`
 
 export const ProfileAuthor = styled.h1`
   font-size: 3.6rem;
+  color: var(--titleHome);
   /* margin: 0.5rem auto 1.5rem; */
 `;
 
