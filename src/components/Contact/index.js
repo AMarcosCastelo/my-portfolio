@@ -28,7 +28,14 @@ const Contact = () => {
     <>
       <S.ContactWrapper>  
         <S.ContactFormWrapper>
-          <S.ContactForm>
+          <S.ContactForm
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            name="contact"
+          >
+            <input type="hidden" name="bot-field"/>
+            <input type="hidden" name="form-name" value="contact" />
             <S.ContactFormTitle>Entre em Contato</S.ContactFormTitle>
 
             <S.ContactFieldset>
@@ -71,7 +78,7 @@ const Contact = () => {
               </S.Field>
             </S.ContactFieldset>
             <S.BtnDiv>
-              <S.ButtonForm>Enviar</S.ButtonForm>
+              <S.ButtonForm type="submit">Enviar</S.ButtonForm>
             </S.BtnDiv>
           </S.ContactForm>
           <S.ContactSocialMedia>
