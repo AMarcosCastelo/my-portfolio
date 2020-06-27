@@ -44,7 +44,7 @@ export const HomeTitle = styled.h1`
   font-size: 3rem;
   font-weight: 700;
   margin: 1rem auto;
-  color: var(--white);
+  color: var(--titleHome);
   z-index: 100;
 
   ${media.lessThan("small")`

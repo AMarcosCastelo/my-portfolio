@@ -12,7 +12,6 @@ const Squares = () => {
         const position = random(1, 100);
         const delay = random(0.1, 5);
         const duration = random(12, 24);
-        const animationTiming = random(12, 24);
 
         return (
           <S.SquareItem

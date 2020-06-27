@@ -81,6 +81,7 @@ const GlobalStyles = createGlobalStyle`
     --background: #242424;
     --white: #fff;
     --black: #222;
+    --titleHome: #fff;
   }
 
   body.light { 
@@ -96,6 +97,7 @@ const GlobalStyles = createGlobalStyle`
     --background: #fff;
     --white: #fff;
     --black: #222;
+    --titleHome: #555;
   }
 `;
 
