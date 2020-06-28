@@ -16,7 +16,6 @@ export const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: calc(100vh + 6rem); */
   width: 100%;
 `;
 
@@ -130,6 +129,10 @@ export const FormInput = styled.input`
     margin-top: 0;
     top: 0;
     color: var(--highlight);
+  }
+
+  &:focus-within:required:invalid {
+    border-bottom: 2px solid red;
   }
 `;
 

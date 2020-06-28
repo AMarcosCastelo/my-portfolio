@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import links from '../SocialLinks/content';
 import Icons from '../SocialLinks/icons';
-import Squares from '../Squares';
+import { useForm } from "react-hook-form";
 
 import * as S from './styled';
 
@@ -24,6 +24,8 @@ const ImgLogo = () => {
 };
 
 const Contact = () => {
+  const { register, handleSubmit, errors } = useForm();
+
   return (
     <>
       <S.ContactWrapper>  
@@ -33,6 +35,7 @@ const Contact = () => {
             netlify-honeypot="bot-field"
             data-netlify="true"
             name="contact"
+            onSubmit={handleSubmit((_, event) => event.target.submit())}
           >
             <input type="hidden" name="bot-field"/>
             <input type="hidden" name="form-name" value="contact" />
@@ -46,7 +49,7 @@ const Contact = () => {
                     name="name"
                     id="name"
                     placeholder=" "
-                    required
+                    ref={register()}
                   />
                   <S.FormLabel htmlFor="name">Nome</S.FormLabel>
                 </S.Field>
@@ -57,9 +60,16 @@ const Contact = () => {
                     name="email"
                     id="email"
                     placeholder=" "
-                    required
+                    ref={register({
+                      required: "Entre com seu e-mail",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                        message: "Entre com um endereço de e-mail válido"
+                      }
+                    })}
                   />
                   <S.FormLabel htmlFor="email">E-mail</S.FormLabel>
+                  {errors.name && <span style={{color: "red"}}>{errors.name.message}</span>}
                 </S.Field>
               </S.FieldGroup>
               <S.Field>
@@ -68,13 +78,22 @@ const Contact = () => {
                   name="subject"
                   id="subject"
                   placeholder=" "
-                  required
+                  ref={register()}
                 />
                 <S.FormLabel htmlFor="subject">Assunto</S.FormLabel>
               </S.Field>
               <S.Field>
-                <S.TextArea name="message" placeholder=" " id="message" rows="5" />
+                <S.TextArea 
+                  name="message"
+                  placeholder=" "
+                  id="message"
+                  ref={register({
+                    required: "Escreva uma mensagem"
+                  })}
+                  rows="5"
+                />
                 <S.LabelTextArea htmlFor="message">Mensagem</S.LabelTextArea>
+                {errors.message && <span className="error-msg" >{errors.message.message}</span>}
               </S.Field>
             </S.ContactFieldset>
             <S.BtnDiv>
@@ -109,7 +128,6 @@ const Contact = () => {
           </S.ImageBox>
         </S.ContactImageWrapper>
       </S.ContactWrapper>
-      <Squares />
     </>
   );
 }
