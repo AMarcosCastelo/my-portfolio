@@ -9,12 +9,6 @@ export const PostItemLink = styled(AniLink)`
   &:hover {
     color: var(--highlight);
   }
-
-  ${media.lessThan("medium")`
-    align-items: flex-start;
-    flex-direction: column;
-    /* padding: 2rem 1rem; */
-  `}
 `;
 
 export const PostItemWrapper = styled.section`
@@ -23,32 +17,47 @@ export const PostItemWrapper = styled.section`
   display: flex;
   padding: 2rem 4rem;
   width: 100%;
+
+  ${media.lessThan("medium")`
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  `}
+
+  ${media.lessThan("small")`
+    padding: 2rem 1rem;
+  `}
 `;
 
 export const PostItemTag = styled.div`
   align-items: center;
-  background: ${props => props.background ? props.background : "var(--highlight)"};
-  border-radius: 50%;
+  background-image: ${props => props.image ? `url(${props.image})` : `url('/assets/img/volcano.jpg')`};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
   color: var(--white);
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;
   justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
+  min-height: 200px;
+  min-width: 40%;
   text-transform: uppercase;
 
-  ${media.lessThan("medium")`
-    border-radius: 0;
-    font-size: 1rem;
-    min-height: auto;
-    min-width: auto;
-    padding: .2rem .5rem;
-    margin-bottom: .7rem;
+  ${media.lessThan("large")`
+    min-width: 30%; 
   `}
 
   ${media.lessThan("medium")`
-    margin: 0;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  `}
+
+  ${media.lessThan("small")`
+    min-height: 200px;
   `}
 `;
 
@@ -56,6 +65,9 @@ export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+  ${media.lessThan("medium") `
+    margin: 0;
+  `}
 `;
 
 export const PostItemDate = styled.time`

@@ -24,22 +24,27 @@ const BlogList = (props) => {
             category,
             title,
             date,
-            description
+            description,
+            image
           },
           timeToRead,
           fields: { slug },
         }
       }, index) => (
+        <div key={index}>
+        {console.log(image)}
         <PostItem
           key={index}
           slug={slug}
           background={background}
           category={category}
+          image={image}
           date={date}
           timeToRead={timeToRead}
           title={title}
           description={description}
         />
+        </div>
       ))}
       <Pagination
         isFirst={isFirst}
