@@ -15,7 +15,8 @@ const SuccessPages = () => {
       <SEO title="Sucesso" />
       <SuccessWrapper>
         <SuccessMensage>
-          <Title>Mensagen enviada com Sucesso</Title>
+          <Title>Obrigado!</Title>
+          <Msg>Mensagem enviada com Sucesso</Msg>
           <Btn
             to="/contact"
             cover
@@ -48,8 +49,14 @@ export const SuccessMensage = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-size: 3rem;
   color: var(--titleHome);
-  font-size: 2rem;
+  margin-bottom: 10px;
+`;
+
+export const Msg = styled.p`
+  color: var(--texts);
+  font-size: 1.6rem;
   ${media.lessThan("medium")`
     font-size: 1.3rem;
   `}
