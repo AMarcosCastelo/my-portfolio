@@ -31,8 +31,6 @@ const BlogList = (props) => {
           fields: { slug },
         }
       }, index) => (
-        <div key={index}>
-        {console.log(image)}
         <PostItem
           key={index}
           slug={slug}
@@ -44,7 +42,6 @@ const BlogList = (props) => {
           title={title}
           description={description}
         />
-        </div>
       ))}
       <Pagination
         isFirst={isFirst}

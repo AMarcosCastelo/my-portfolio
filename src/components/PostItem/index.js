@@ -15,7 +15,6 @@ const PostItem = ({ slug, image, date, timeToRead, title, description}) => {
       duration={0.6}
     >
       <S.PostItemWrapper>
-        {console.log(image)}
         <S.PostItemTag image={image}></S.PostItemTag>
         <S.PostItemInfo>
           <S.PostItemDate>{date} - {timeToRead} min de leitura</S.PostItemDate>
