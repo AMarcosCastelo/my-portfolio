@@ -7,7 +7,7 @@ module.exports = {
     description: `Meu portfólio e meu espaço para compartilhar conhecimento sobre a comunidade em volta do JS e do Desenvolvimento Front-End.`,
     author: `Antonio Marcos Castelo de Carvalho`,
     position: `Desenvolvedor Front-End`,
-    siteUrl: `https://amarcoscastelo.com.br`
+    siteUrl: `https://amcastelo.com.br`
   },
   plugins: [
     `gatsby-plugin-transition-link`,

@@ -2,7 +2,7 @@ backend:
   name: github
   repo: AMarcosCastelo/my-portfolio
   branch: master
-  site_domain: https://amarcoscastelo.netlify.app/
+  site_domain: https://amcastelo.com.br/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
