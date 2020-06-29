@@ -15,6 +15,7 @@ const PostItem = ({ slug, image, date, timeToRead, title, description}) => {
       duration={0.6}
     >
       <S.PostItemWrapper>
+        {console.log(image)}
         <S.PostItemTag image={image}></S.PostItemTag>
         <S.PostItemInfo>
           <S.PostItemDate>{date} - {timeToRead} min de leitura</S.PostItemDate>
@@ -28,9 +29,8 @@ const PostItem = ({ slug, image, date, timeToRead, title, description}) => {
 
 PostItem.propItems= {
   slug: PropTypes.string.isRequired,
-  background: PropTypes.string,
-  category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   timeToRead: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

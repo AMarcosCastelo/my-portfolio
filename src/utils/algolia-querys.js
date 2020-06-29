@@ -13,6 +13,7 @@ const postsQuery =  `
             description
             title
             background
+            image
           }
           excerpt(pruneLength: 5000)
           fields {
