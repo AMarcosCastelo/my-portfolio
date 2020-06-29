@@ -24,6 +24,9 @@ export const ProfileAuthor = styled.h1`
   font-size: 3.6rem;
   color: var(--titleHome);
   /* margin: 0.5rem auto 1.5rem; */
+  ${media.lessThan("small")`
+    font-size: 2.5rem;
+  `}
 `;
 
 export const ProfilePosition = styled.small`
