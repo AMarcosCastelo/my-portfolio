@@ -3,6 +3,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import media from "styled-media-query";
 import styled from 'styled-components';
 import getThemeColor from '../utils/getThemeColor';
+import Squares from '../components/Squares';
 import { LeftArrowAlt as Left } from "@styled-icons/boxicons-regular/LeftArrowAlt";
 
 import Layout from "../components/Layout"
@@ -24,6 +25,7 @@ const SuccessPages = () => {
           ><Left size={30} />Voltar</Btn>
         </SuccessMensage>
       </SuccessWrapper>
+      <Squares />
     </Layout>
   );
 };
