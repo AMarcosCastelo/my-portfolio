@@ -4,7 +4,8 @@ import getThemeColor from "../../utils/getThemeColor";
 
 import * as S from "./styled";
 
-const PostItem = ({ slug, background, image, category, date, timeToRead, title, description}) => {
+const PostItem = ({ slug, image, date, timeToRead, title, description}) => {
+
   return (
     <S.PostItemLink
       to={`/blog${slug}`}

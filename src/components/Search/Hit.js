@@ -6,6 +6,7 @@ const Hit = ({ hit }) => (
     slug={`${hit.fields.slug}`}
     background={hit.background}
     title={hit.title}
+    image={hit.image}
     date={hit.date}
     description={hit.description}
     category={hit.category}

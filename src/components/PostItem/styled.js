@@ -42,7 +42,7 @@ export const PostItemTag = styled.div`
   font-weight: 700;
   justify-content: center;
   min-height: 200px;
-  min-width: 40%;
+  min-width: 35%;
   text-transform: uppercase;
 
   ${media.lessThan("large")`
