@@ -1,5 +1,4 @@
-import { createGlobalStyle } from "styled-components";
-
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -34,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     line-height: 1;
+    -webkit-font-smoothing: antialiased !important;
   }
   ol, ul {
     list-style: none;
@@ -99,7 +99,6 @@ const GlobalStyles = createGlobalStyle`
     --black: #222;
     --titleHome: #555;
   }
-`;
-
+`
 
 export default GlobalStyles
