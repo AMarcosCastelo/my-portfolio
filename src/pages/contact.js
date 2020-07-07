@@ -1,10 +1,10 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import Contact from "../components/Contact";
-import Squares from '../components/Squares';
+import Contact from "../components/Contact"
+import Squares from "../components/Squares"
 
 const ContactPage = () => {
   const about = useStaticQuery(graphql`
@@ -16,7 +16,7 @@ const ContactPage = () => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <Layout>
@@ -27,7 +27,7 @@ const ContactPage = () => {
       <Contact />
       <Squares />
     </Layout>
-  );
-};
+  )
+}
 
-export default ContactPage;
+export default ContactPage
