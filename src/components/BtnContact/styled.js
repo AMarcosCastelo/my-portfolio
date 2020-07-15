@@ -22,7 +22,7 @@ export const Btn = styled(AniLink)`
   .text {
     color: var(--texts);
     font-size: 22px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: bold;
     line-height: 32px;
     position: relative;

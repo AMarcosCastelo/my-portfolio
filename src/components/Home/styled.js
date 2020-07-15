@@ -1,11 +1,10 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import Img from 'gatsby-image';
+import styled from "styled-components"
+import media from "styled-media-query"
+import Img from "gatsby-image"
 
 export const HomeWrapper = styled.section`
   display: flex;
   padding: 2rem 1.4rem;
-  /* justify-content: space-between; */
   height: 100vh;
   z-index: 100;
   align-items: center;
@@ -23,7 +22,7 @@ export const HomeWrapper = styled.section`
     padding: 1rem;
     width: 100vw;
   `}
-`;
+`
 
 export const HomeGroup = styled.div`
   display: flex;
@@ -38,7 +37,7 @@ export const HomeGroup = styled.div`
   ${media.lessThan("medium")`
     padding: 1rem;
   `}
-`;
+`
 
 export const HomeTitle = styled.h1`
   font-size: 3rem;
@@ -56,19 +55,20 @@ export const HomeTitle = styled.h1`
     font-size: 2rem;
     margin: 0.4rem 0;
   `}
-`;
+`
 
 export const HomeDescription = styled.p`
   color: var(--texts);
   font-size: 1.5rem;
   margin-bottom: 4rem;
   z-index: 100;
+  margin-top: 10px;
 
   ${media.lessThan("small")`
     font-size: 1rem;
     margin: 2rem 0;
-  `}  
-`;
+  `}
+`
 
 export const HomeImageWrapper = styled.div`
   display: flex;
@@ -81,15 +81,15 @@ export const HomeImageWrapper = styled.div`
   ${media.lessThan("large")`
     display: none;
   `}
-`;
+`
 
 export const ImageBox = styled.div`
   width: 100%;
-`;
+`
 
 export const HomeImage = styled(Img)`
   display: block;
   max-width: 620px;
   margin: auto;
   z-index: 100;
-`;
+`

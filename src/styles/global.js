@@ -5,7 +5,6 @@ const GlobalStyles = createGlobalStyle`
     v2.0 | 20110126
     License: none (public domain)
   */
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -54,7 +53,7 @@ const GlobalStyles = createGlobalStyle`
     background: var(--background);
     line-height: 1;
     font-size: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   img {

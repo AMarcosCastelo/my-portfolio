@@ -43,7 +43,7 @@ const Home = () => {
           <S.HomeDescription id="desc">
             Desenvolvedor Front-End | Freelancer
           </S.HomeDescription>
-          <BtnContact id="btn" />
+          <BtnContact />
         </S.HomeGroup>
         <S.HomeImageWrapper>
           <S.ImageBox>
