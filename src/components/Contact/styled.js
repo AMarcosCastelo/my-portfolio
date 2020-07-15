@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import Img from 'gatsby-image';
+import styled from "styled-components"
+import media from "styled-media-query"
+import Img from "gatsby-image"
 
 export const ContactWrapper = styled.section`
   display: flex;
@@ -10,14 +10,14 @@ export const ContactWrapper = styled.section`
   ${media.lessThan("small")`
     padding: 5rem 1rem;
   `}
-`;
+`
 
 export const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-`;
+`
 
 export const ContactSocialMedia = styled.div`
   width: 100%;
@@ -27,7 +27,7 @@ export const ContactSocialMedia = styled.div`
   flex-direction: column;
   justify-content: space-between;
   z-index: 3;
-`;
+`
 
 export const ContactLinksList = styled.ul`
   display: flex;
@@ -35,11 +35,9 @@ export const ContactLinksList = styled.ul`
   align-items: center;
   list-style: none;
   z-index: 3;
-`;
+`
 
-export const ContactLinksItem = styled.li`
-
-`;
+export const ContactLinksItem = styled.li``
 
 export const ContactLinksLink = styled.a`
   color: var(--texts);
@@ -50,14 +48,14 @@ export const ContactLinksLink = styled.a`
   &:hover {
     color: var(--highlight);
   }
-`;
+`
 
 export const IconWrapper = styled.div`
   fill: #242424;
   width: 30px;
   height: 30px;
   z-index: 3;
-`;
+`
 
 export const ContactSocialDescription = styled.p`
   color: var(--texts);
@@ -65,19 +63,19 @@ export const ContactSocialDescription = styled.p`
   font-weight: 300;
   font-size: 1.255rem;
   z-index: 3;
-`;
+`
 
 export const ContactFieldset = styled.fieldset`
   padding: 3rem 0 0;
   width: 100%;
   z-index: 3;
-`;
+`
 
 export const ContactForm = styled.form`
   color: var(--texts);
   width: 100%;
   z-index: 3;
-`;
+`
 
 export const FieldGroup = styled.div`
   display: flex;
@@ -85,23 +83,21 @@ export const FieldGroup = styled.div`
   ${media.lessThan("small")`
     flex-direction: column;
     width: 100%;
-  `}
-
-  /* .w50 {
+  `}/* .w50 {
     width: 50%;
   } */
-`;
+`
 
 export const FormLabel = styled.label`
   font-size: 1.125rem;
   pointer-events: none;
   position: absolute;
-  top: calc(50% - .5rem);
+  top: calc(50% - 0.5rem);
   left: 0;
   margin-top: 0.813rem;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   z-index: 3;
-`;
+`
 
 export const FormInput = styled.input`
   border: 0;
@@ -111,20 +107,20 @@ export const FormInput = styled.input`
   background: transparent;
   outline: none;
   font-size: 1.125rem;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   border-radius: 0;
   width: 100%;
   z-index: 3;
 
-  &:focus{
+  &:focus {
     border-bottom: 2px solid var(--highlight);
   }
 
-  ${FormLabel} &::placeholder{
-    color:transparent;
+  ${FormLabel} &::placeholder {
+    color: transparent;
   }
 
-  &:focus + ${FormLabel}, &:not(:placeholder-shown) + ${FormLabel}{
+  &:focus + ${FormLabel}, &:not(:placeholder-shown) + ${FormLabel} {
     font-size: 0.938rem;
     margin-top: 0;
     top: 0;
@@ -134,7 +130,7 @@ export const FormInput = styled.input`
   &:focus-within:required:invalid {
     border-bottom: 2px solid red;
   }
-`;
+`
 
 export const Field = styled.div`
   position: relative;
@@ -145,7 +141,7 @@ export const Field = styled.div`
   padding-top: 0.813rem;
   margin-bottom: 1.5rem;
   width: 100%;
-`;
+`
 
 export const LabelTextArea = styled.label`
   font-size: 1.125rem;
@@ -155,13 +151,13 @@ export const LabelTextArea = styled.label`
   top: 0;
   left: 0;
   margin-top: 0.813rem;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   z-index: 3;
 
-  & ${FormInput}::placeholder{
-    color:transparent;
+  & ${FormInput}::placeholder {
+    color: transparent;
   }
-`;
+`
 
 export const TextArea = styled.textarea`
   border: 0;
@@ -171,22 +167,22 @@ export const TextArea = styled.textarea`
   background: transparent;
   outline: none;
   font-size: 1.125rem;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   border-radius: 0;
   z-index: 3;
 
-  &:focus{
+  &:focus {
     border: 2px solid var(--highlight);
   }
 
-  &:focus + ${LabelTextArea}, &:not(:placeholder-shown) + ${LabelTextArea}{
+  &:focus + ${LabelTextArea}, &:not(:placeholder-shown) + ${LabelTextArea} {
     font-size: 0.938rem;
     margin-top: 0;
     top: -1.25rem;
     left: -0.938rem;
     color: var(--highlight);
   }
-`;
+`
 
 export const ContactFormTitle = styled.h1`
   font-size: 3rem;
@@ -196,13 +192,13 @@ export const ContactFormTitle = styled.h1`
     font-size: 1.9rem;
   `}
   z-index: 3;
-`;
+`
 
 export const BtnDiv = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 100%;
-`;
+`
 
 export const ButtonForm = styled.button`
   cursor: pointer;
@@ -218,7 +214,7 @@ export const ButtonForm = styled.button`
     color: #242424;
     background: var(--highlight);
   }
-`;
+`
 
 export const ContactImageWrapper = styled.div`
   display: flex;
@@ -230,14 +226,14 @@ export const ContactImageWrapper = styled.div`
   ${media.lessThan("large")`
     display: none;
   `}
-`;
+`
 
 export const ImageBox = styled.div`
   width: 100%;
-`;
+`
 
 export const ContactImage = styled(Img)`
   display: block;
   max-width: 620px;
   margin: auto;
-`;
+`

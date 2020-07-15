@@ -1,15 +1,16 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useEffect } from "react"
+import { TimelineMax } from "gsap"
+import { useStaticQuery, graphql } from "gatsby"
 
-import BtnContact from '../BtnContact';
-import Squares from '../Squares';
+import BtnContact from "../BtnContact"
+import Squares from "../Squares"
 
-import * as S from "./styled";
+import * as S from "./styled"
 
 const ImgLogo = () => {
   const { imgLogo } = useStaticQuery(graphql`
     query {
-      imgLogo: file(relativePath: {eq: "AM-2.png"}) {
+      imgLogo: file(relativePath: { eq: "AM-2.png" }) {
         childImageSharp {
           fluid(maxWidth: 503, maxHeight: 394) {
             ...GatsbyImageSharpFluid
@@ -17,20 +18,32 @@ const ImgLogo = () => {
         }
       }
     }
-  `);
-  return (
-    <S.HomeImage fluid={imgLogo.childImageSharp.fluid} />
-  );
-};
+  `)
+  return <S.HomeImage fluid={imgLogo.childImageSharp.fluid} />
+}
 
 const Home = () => {
+  useEffect(() => {
+    const tl = new TimelineMax()
+
+    tl.from("#title", 1, { opacity: 0, x: -200 }).from("#desc", 1, {
+      opacity: 0,
+      x: -200,
+    })
+  }, [])
+
   return (
     <>
       <S.HomeWrapper>
         <S.HomeGroup>
-          <S.HomeTitle>Olá, <br/> eu sou Antonio Marcos, <br/>  Desenvolvedor Web <br/> Front End</S.HomeTitle>
-          <S.HomeDescription>Desenvolvedor Front-End | Freelancer</S.HomeDescription>
-          <BtnContact />
+          <S.HomeTitle id="title">
+            Olá, <br /> eu sou Antonio Marcos, <br /> Desenvolvedor Web <br />{" "}
+            Front End
+          </S.HomeTitle>
+          <S.HomeDescription id="desc">
+            Desenvolvedor Front-End | Freelancer
+          </S.HomeDescription>
+          <BtnContact id="btn" />
         </S.HomeGroup>
         <S.HomeImageWrapper>
           <S.ImageBox>
@@ -40,7 +53,7 @@ const Home = () => {
       </S.HomeWrapper>
       <Squares />
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home
