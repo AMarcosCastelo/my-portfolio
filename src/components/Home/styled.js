@@ -13,7 +13,7 @@ export const HomeWrapper = styled.section`
   top: 0;
 
   ${media.lessThan("large")`
-    height: calc(100vh - 6rem);
+    height: 100vh;
   `}
 
   ${media.lessThan("small")`
@@ -35,8 +35,8 @@ export const HomeGroup = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding: 2rem;
-  width: 40rem;
-  height: calc(100vh - 6rem);
+  width: 70rem;
+  height: 100%;
   z-index: 100;
 
   ${media.lessThan("medium")`
@@ -79,9 +79,9 @@ export const HomeImageWrapper = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  width: 50%;
-  height: 100vh;
-  padding: 6rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 30px;
   z-index: 100;
   ${media.lessThan("large")`
     display: none;
@@ -94,7 +94,7 @@ export const ImageBox = styled.div`
 
 export const HomeImage = styled(Img)`
   display: block;
-  max-width: 620px;
+  max-width: 500px;
   margin: auto;
   z-index: 100;
 `

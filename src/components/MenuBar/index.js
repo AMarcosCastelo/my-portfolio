@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react"
 import Logo from "../Logo"
-import { LightUp } from "@styled-icons/entypo/LightUp"
-import { LightDown } from "@styled-icons/entypo/LightDown"
 import { Menu } from "@styled-icons/boxicons-regular/Menu"
 
 import links from "./content"
@@ -12,10 +10,8 @@ import getThemeColor from "../../utils/getThemeColor"
 import * as S from "./styled"
 
 const MenuBar = () => {
-  const [theme, setTheme] = useState(null)
+  const [, setTheme] = useState(null)
   const [showMenu, setShowMenu] = useState(false)
-
-  const isDarkMode = theme === "dark"
 
   useEffect(() => {
     setTheme(window.__theme)
@@ -48,15 +44,6 @@ const MenuBar = () => {
                 </S.MenuBarLink>
               )
             })}
-            <S.MenuBarItem
-              title="Mudar o tema"
-              className={theme}
-              onClick={() => {
-                window.__setPreferredTheme(isDarkMode ? "light" : "dark")
-              }}
-            >
-              {isDarkMode ? <LightDown /> : <LightUp />}
-            </S.MenuBarItem>
           </S.MenuBarGroup>
         </S.MenuToggle>
         <S.MenuBarGroup id="socialLinks">

@@ -12,7 +12,7 @@ const ImgLogo = () => {
       imgLogo: file(relativePath: { eq: "AM-2.png" }) {
         childImageSharp {
           fluid(maxWidth: 503, maxHeight: 394) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

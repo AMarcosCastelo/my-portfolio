@@ -92,10 +92,17 @@ const Background = () => {
 
     const satTimeLine = new TimelineMax({ repeat: -1 })
 
-    satTimeLine.to(satelite.current, 46, {
+     satTimeLine
+    .set(satelite.current, {y: -200})
+    .to(satelite.current, 46, {
       rotation: 360,
       transformOrigin: "center center",
       ease: Linear.easeNone,
+    })
+
+    TweenMax.to(satelite.current, 100, {
+      y: 1090,
+      repeat: -1,
     })
 
     createJets()
@@ -127,7 +134,7 @@ const Background = () => {
             x1="727.15"
             y1="504.97"
             x2="727.15"
-            y2="966.73"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine0"
             ref={element => (speedLines[0] = element)}
@@ -145,7 +152,7 @@ const Background = () => {
             x1="1115.23"
             y1="504.97"
             x2="1115.23"
-            y2="896.13"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine2"
             ref={element => (speedLines[2] = element)}
@@ -154,7 +161,7 @@ const Background = () => {
             x1="21"
             y1="11.6"
             x2="21"
-            y2="879.8"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine3"
             ref={element => (speedLines[3] = element)}
@@ -163,7 +170,7 @@ const Background = () => {
             x1="1851"
             y1="1.07"
             x2="1851"
-            y2="1041"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine4"
             ref={element => (speedLines[4] = element)}
@@ -172,7 +179,7 @@ const Background = () => {
             x1="1393"
             y1="8"
             x2="1393"
-            y2="832.31"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine5"
             ref={element => (speedLines[5] = element)}
@@ -181,7 +188,7 @@ const Background = () => {
             x1="429"
             y1="161.69"
             x2="429"
-            y2="986"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine6"
             ref={element => (speedLines[6] = element)}
@@ -190,7 +197,7 @@ const Background = () => {
             x1="876.43"
             y1="52.22"
             x2="876.43"
-            y2="513.99"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine7"
             ref={element => (speedLines[7] = element)}
@@ -199,7 +206,7 @@ const Background = () => {
             x1="79.43"
             y1="75.22"
             x2="79.43"
-            y2="536.99"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine8"
             ref={element => (speedLines[8] = element)}
@@ -208,7 +215,7 @@ const Background = () => {
             x1="191.43"
             y1="521.22"
             x2="191.43"
-            y2="982.99"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine9"
             ref={element => (speedLines[9] = element)}
@@ -217,7 +224,7 @@ const Background = () => {
             x1="1691.51"
             y1="601.5"
             x2="1691.51"
-            y2="1063.26"
+            y2="1064.73"
             strokeMiterlimit="10"
             name="speedLine10"
             ref={element => (speedLines[10] = element)}
