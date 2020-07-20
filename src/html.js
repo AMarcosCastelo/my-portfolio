@@ -11,13 +11,16 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
         {props.headComponents}
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
       </head>
       <body {...props.bodyAttributes} className="dark">
         <script
-            dangerouslySetInnerHTML={{
-              __html: `
+          dangerouslySetInnerHTML={{
+            __html: `
               (function() {
                 window.__onThemeChange = function() {};
                 function setTheme(newTheme) {
@@ -39,8 +42,8 @@ export default function HTML(props) {
                 setTheme(preferredTheme || 'dark');
               })();
             `,
-            }}
-          />
+          }}
+        />
         {props.preBodyComponents}
         <div
           key={`body`}
