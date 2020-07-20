@@ -6,8 +6,11 @@ export const HomeWrapper = styled.section`
   display: flex;
   padding: 2rem 1.4rem;
   height: 100vh;
+  width: 100vw;
   z-index: 100;
   align-items: center;
+  position: absolute;
+  top: 0;
 
   ${media.lessThan("large")`
     height: calc(100vh - 6rem);
@@ -16,11 +19,13 @@ export const HomeWrapper = styled.section`
   ${media.lessThan("small")`
     padding: 1rem;
     width: 100vw;
+    height: 100vh;
   `}
 
   ${media.lessThan("medium")`
     padding: 1rem;
     width: 100vw;
+    height: 100vh;
   `}
 `
 
@@ -29,8 +34,8 @@ export const HomeGroup = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 4rem;
-  width: 50rem;
+  padding: 2rem;
+  width: 40rem;
   height: calc(100vh - 6rem);
   z-index: 100;
 
@@ -72,11 +77,11 @@ export const HomeDescription = styled.p`
 
 export const HomeImageWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   width: 50%;
-  height: 100%;
-  padding-right: 4rem;
+  height: 100vh;
+  padding: 6rem;
   z-index: 100;
   ${media.lessThan("large")`
     display: none;

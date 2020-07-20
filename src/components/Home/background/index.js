@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react"
 import { TimelineMax, Linear } from "gsap"
 import { TweenMax } from "gsap/gsap-core"
 
+import { Container } from "./styled"
+
 const Background = () => {
   const rocket = useRef(null)
   const satelite = useRef(null)
@@ -72,7 +74,7 @@ const Background = () => {
           scale: 6 - calc,
         },
         {
-          y: Math.random() * 100 + 1080,
+          y: Math.random() * 100 + 2080,
           repeat: -1,
           repeatDelay: 2,
           ease: Linear.easeNone,
@@ -104,7 +106,7 @@ const Background = () => {
   }, [])
 
   return (
-    <div style={{ position: "relative", top: 0 }}>
+    <Container>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1920 1080"
@@ -435,7 +437,7 @@ const Background = () => {
           ></circle>
         </g>
       </svg>
-    </div>
+    </Container>
   )
 }
 
