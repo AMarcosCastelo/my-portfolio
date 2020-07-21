@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       <TransitionPortal level="top">
         <MenuBar />
       </TransitionPortal>
-      <S.LayoutMain>
+      <S.LayoutMain isHome={children[0].props.title === 'Home'}>
         {children}
       </S.LayoutMain>
     </S.LayoutWrapper>

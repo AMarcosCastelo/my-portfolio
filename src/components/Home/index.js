@@ -52,7 +52,6 @@ const Home = () => {
           </S.ImageBox>
         </S.HomeImageWrapper>
       </S.HomeWrapper>
-      {/* <Squares /> */}
     </>
   )
 }

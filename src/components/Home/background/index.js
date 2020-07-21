@@ -93,14 +93,14 @@ const Background = () => {
     const satTimeLine = new TimelineMax({ repeat: -1 })
 
      satTimeLine
-    .set(satelite.current, {y: -200})
+    .set(satelite.current, {y: -150})
     .to(satelite.current, 46, {
       rotation: 360,
       transformOrigin: "center center",
       ease: Linear.easeNone,
     })
 
-    TweenMax.to(satelite.current, 100, {
+    TweenMax.to(satelite.current, 130, {
       y: 1090,
       repeat: -1,
     })
@@ -116,7 +116,7 @@ const Background = () => {
     <Container>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1920 1080"
+        viewBox="0 0 1920 1060"
         width="100%"
         height="100%"
       >

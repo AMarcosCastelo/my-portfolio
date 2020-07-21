@@ -11,9 +11,10 @@ export const LayoutWrapper = styled.section`
 
 export const LayoutMain = styled.main`
   background: var(--background);
-  min-height: 100vh;
+  height: 100vh;
   padding: 0 0 0 5rem;
   width: 100%;
+  overflow: ${props => props.isHome ? 'hidden' : 'auto'};
 
   ${media.lessThan("large")`
     padding: 3.925rem 0 0 0;

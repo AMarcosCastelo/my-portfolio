@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export const HomeWrapper = styled.section`
   display: flex;
   padding: 2rem 1.4rem;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   z-index: 100;
   align-items: center;

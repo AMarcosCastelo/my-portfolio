@@ -7,7 +7,11 @@ export const ContactWrapper = styled.section`
   padding: 0 3rem;
   z-index: 3;
 
-  ${media.lessThan("small")`
+  ${media.lessThan("large")`
+    padding: 1rem 3rem;
+  `}
+
+  ${media.lessThan("medium")`
     padding: 5rem 1rem;
   `}
 `
@@ -27,6 +31,10 @@ export const ContactSocialMedia = styled.div`
   flex-direction: column;
   justify-content: space-between;
   z-index: 3;
+
+  ${media.lessThan("large")`
+    padding: 1rem 0;
+  `}
 `
 
 export const ContactLinksList = styled.ul`
@@ -63,6 +71,9 @@ export const ContactSocialDescription = styled.p`
   font-weight: 300;
   font-size: 1.255rem;
   z-index: 3;
+  ${media.lessThan("large")`
+    text-align: center;
+  `}
 `
 
 export const ContactFieldset = styled.fieldset`
@@ -187,6 +198,10 @@ export const TextArea = styled.textarea`
 export const ContactFormTitle = styled.h1`
   font-size: 3rem;
   color: var(--titleHome);
+
+  ${media.lessThan("large")`
+    font-size: 2.5rem;
+  `}
 
   ${media.lessThan("small")`
     font-size: 1.9rem;
