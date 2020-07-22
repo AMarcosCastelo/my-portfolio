@@ -18,6 +18,10 @@ export const PostItemWrapper = styled.section`
   padding: 2rem 4rem;
   width: 100%;
 
+  ${media.lessThan("large")`
+    padding: 1rem;
+  `}
+
   ${media.lessThan("medium")`
     flex-direction: column;
     align-items: flex-start;
@@ -42,12 +46,8 @@ export const PostItemTag = styled.div`
   font-weight: 700;
   justify-content: center;
   min-height: 200px;
-  min-width: 35%;
+  min-width: 30%;
   text-transform: uppercase;
-
-  ${media.lessThan("large")`
-    min-width: 30%; 
-  `}
 
   ${media.lessThan("medium")`
     width: 100%;
