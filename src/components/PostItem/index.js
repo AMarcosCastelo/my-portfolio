@@ -4,7 +4,7 @@ import getThemeColor from "../../utils/getThemeColor";
 
 import * as S from "./styled";
 
-const PostItem = ({ slug, image, date, timeToRead, title, description}) => {
+const PostItem = ({ slug, image, date, timeToRead, title, excerpt}) => {
 
   return (
     <S.PostItemLink
@@ -17,9 +17,9 @@ const PostItem = ({ slug, image, date, timeToRead, title, description}) => {
       <S.PostItemWrapper>
         <S.PostItemTag image={image}></S.PostItemTag>
         <S.PostItemInfo>
-          <S.PostItemDate>{date} - {timeToRead} min de leitura</S.PostItemDate>
           <S.PostItemTitle>{title}</S.PostItemTitle>
-          <S.PostItemDescription>{description}</S.PostItemDescription>
+          <S.PostItemDescription>{excerpt}</S.PostItemDescription>
+          <S.PostItemDate>{date} - {timeToRead} min de leitura</S.PostItemDate>
         </S.PostItemInfo>
       </S.PostItemWrapper>
     </S.PostItemLink>

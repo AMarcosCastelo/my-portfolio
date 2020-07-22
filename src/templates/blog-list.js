@@ -29,6 +29,7 @@ const BlogList = (props) => {
           },
           timeToRead,
           fields: { slug },
+          excerpt
         }
       }, index) => (
         <PostItem
@@ -40,7 +41,7 @@ const BlogList = (props) => {
           date={date}
           timeToRead={timeToRead}
           title={title}
-          description={description}
+          excerpt={excerpt}
         />
       ))}
       <Pagination
@@ -77,6 +78,7 @@ export const query = graphql`
           fields {
             slug
           }
+          excerpt(pruneLength: 200)
         }
       }
     }

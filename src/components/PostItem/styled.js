@@ -6,16 +6,17 @@ export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
+  max-width: 950px;
+  margin: 0 auto;
   &:hover {
     color: var(--highlight);
   }
 `;
 
 export const PostItemWrapper = styled.section`
-  align-items: center;
-  border-bottom: 1px solid var(--borders);
+  align-items: flex-start;
   display: flex;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   width: 100%;
 
   ${media.lessThan("large")`
@@ -39,7 +40,7 @@ export const PostItemTag = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 4px;
   color: var(--white);
   display: flex;
   font-size: 1.3rem;
@@ -72,10 +73,11 @@ export const PostItemInfo = styled.div`
 
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
+  margin-top: 1rem;
 `;
 
 export const PostItemTitle = styled.h1`
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
 `;
