@@ -6,28 +6,15 @@ import SEO from "../components/seo"
 import Contact from "../components/Contact"
 import Squares from "../components/Squares"
 
-const ContactPage = () => {
-  const about = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          description
-        }
-      }
-    }
-  `)
-
-  return (
-    <Layout>
-      <SEO
-        title={about.site.siteMetadata.title}
-        description={about.site.siteMetadata.description}
-      />
-      <Contact />
-      <Squares />
-    </Layout>
-  )
-}
+const ContactPage = () => (
+  <Layout>
+    <SEO
+      title="Contato"
+      description="Entre em contato comigo!"
+    />
+    <Contact />
+    <Squares />
+  </Layout>
+)
 
 export default ContactPage
