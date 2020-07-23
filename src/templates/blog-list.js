@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from "gatsby";
+import { itemsBlogAnimate } from '../utils/animations';
 
 import PostItem from '../components/PostItem';
 import Pagination from '../components/Pagination';
@@ -7,12 +8,17 @@ import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
 const BlogList = (props) => {
+  const itemsPost = []
   const postList = props.data.allMarkdownRemark.edges;
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? '/blog/' : `blog/page/${currentPage - 1}`
   const nextPage = `/blog/page/${currentPage + 1}`
+
+  useEffect(() => {
+    itemsBlogAnimate(itemsPost);
+  }, [])
 
   return (
     <Layout>
@@ -24,24 +30,25 @@ const BlogList = (props) => {
             category,
             title,
             date,
-            description,
             image
           },
           timeToRead,
           fields: { slug },
+          excerpt
         }
       }, index) => (
-        <PostItem
-          key={index}
-          slug={slug}
-          background={background}
-          category={category}
-          image={image}
-          date={date}
-          timeToRead={timeToRead}
-          title={title}
-          description={description}
-        />
+        <div ref={element => itemsPost[index] = element} key={index}>
+          <PostItem
+            slug={slug}
+            background={background}
+            category={category}
+            image={image}
+            date={date}
+            timeToRead={timeToRead}
+            title={title}
+            excerpt={excerpt}
+          />
+        </div>
       ))}
       <Pagination
         isFirst={isFirst}
@@ -77,6 +84,7 @@ export const query = graphql`
           fields {
             slug
           }
+          excerpt(pruneLength: 200)
         }
       }
     }

@@ -15,7 +15,7 @@ const postsQuery =  `
             background
             image
           }
-          excerpt(pruneLength: 5000)
+          excerpt(pruneLength: 200)
           fields {
             slug
           }
@@ -41,7 +41,7 @@ const queries = [
     indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, // overrides main index name, optional
     settings: {
       // optional, any index settings
-      attributesToSnippet: ['excerpt:20'],
+      attributesToSnippet: ['excerpt:200'],
     },
   },
 ];
