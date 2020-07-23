@@ -8,7 +8,9 @@ export const PostItemLink = styled(AniLink)`
   text-decoration: none;
   max-width: 950px;
   margin: 0 auto;
+  transition: all .2s ease-in-out;
   &:hover {
+    transform: translateY(-5px);
     color: var(--highlight);
   }
 `;
