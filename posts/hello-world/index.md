@@ -19,6 +19,8 @@ Tudo começou quando meu irmão estava mais perdido do que cego em tiroteio proc
 
 Em algumas semanas eu já estava com a cara enfiada no computador, estudando que nem um louco, consumindo todo tipo de conteúdo voltado para a web, mas nem tudo é flores... Eu estava indo contra 5 anos de faculdade e na minha cabeça aquilo me assustava. A ansiedade batia nas noites me tirando o sono, mas eu não desisti.
 
-E em um pouco mais de um ano eu consegui um emprego na área para a vaga de Júnior. E isso mudou tudo, fiquei muito mais confiante, estudava com mais entusiasmo, cada task que a empresa me passava eu ficava ansioso para resolver e dessa vez uma ansiedade boa.
+E em um pouco mais de um ano de estudos e foco eu consegui um emprego na área para a vaga de Júnior. E isso mudou tudo, fiquei muito mais confiante, estudava com mais entusiasmo, cada task que a empresa me passava eu ficava ansioso para resolver e dessa vez uma ansiedade boa.
 
 ## Mas e o Blog?
+
+O ano em que escrevo essa publicação é 2020, um dos anos mais loucos que já vivi (quem não conhece acha que é o experiente da vida), o ano em que a pandemia de Coronavírus fez com que o mundo ficasse em quarentena e toda a economia sofresse com isso, fazendo com que empresas dessem uma pausa e pessoas perdessem seus empregos.
