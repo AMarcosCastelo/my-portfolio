@@ -15,9 +15,9 @@ Mas antes de qualquer coisa, vou me apresentar...
 
 Meu nome é Antonio Marcos, tenho 25 anos, nasci no Rio Grande do Norte, mas moro atualmente em São Paulo e sou desenvolvedor Fron-End há quase 2 anos. Sou formado em Engenharia Civil na FMU... Pois é, sou um "Engenheiro Civil Front-End" hahaha. Mas vou explicar essa gambiarra toda (lembrando, gambiarra só na vida, no código nunca! hehehe).
 
-Tudo começou quando meu irmão estava mais perdido do que cego em tiroteio procurando algo em que seguir na vida (olha quem fala, o "Engenheiro Civil Front-End" hahaha) e eu já tinha me formado há quase um ano, porém não conseguia arrumar emprego na construção.
+Tudo começou quando meu irmão estava mais perdido do que cego em tiroteio procurando algo em que seguir na vida (olha quem fala, o "Engenheiro Civil Front-End" hahaha) e eu já tinha me formado há quase um ano, porém não conseguia arrumar emprego na construção. Ele estava vendo vídeos sobre "Programação para Iniciantes", bateu aquela curiosidade e fui ver junto. E pra você ver como a família é focada, ele queria ir para o mundo Web e hoje está na área dos games e eu tinha me formado há pouco tempo e me vi maravilhado com o Desenvolvimento Web.
 
-Ele estava vendo vídeos sobre "Programação para Iniciantes", bateu aquela curiosidade e fui ver junto. E pra você ver como a família é focada, ele queria ir para o mundo Web e hoje está na área dos games e eu tinha me formado há pouco tempo e me vi maravilhado com o Desenvolvimento Web.
+![Gif explodindo a mente](exploding-mind.gif "Explodindo a mente")
 
 Em algumas semanas eu já estava com a cara enfiada no computador, estudando que nem um louco, consumindo todo tipo de conteúdo voltado para a web, mas nem tudo é flores... Eu estava indo contra 5 anos de faculdade e na minha cabeça aquilo me assustava. A ansiedade batia nas noites me tirando o sono, mas eu não desisti.
 
