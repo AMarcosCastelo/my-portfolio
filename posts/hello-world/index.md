@@ -30,3 +30,5 @@ Felizmente a minha empresa deu só uma pausa, assim me dando bastante tempo livr
 Tentarei criar tutoriais e até publicações relatando experiencias que passei, assim encorajando mais pessoas a entrar nesse mundo incrível que é a web.
 
 Uma outra razão é que tenho certeza de que vou aprender muito fazendo isso e isso vai me ajudar a longo prazo.
+
+## Concluindo
