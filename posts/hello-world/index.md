@@ -34,3 +34,9 @@ Tentarei criar tutoriais e até publicações relatando experiencias que passei,
 Uma outra razão é que tenho certeza de que vou aprender muito fazendo isso e isso vai me ajudar a longo prazo. 
 
 ## Quero sua ajuda.
+
+Primeiro quero agradecer a você que dedicou seu tempo lendo esse post, espero trazer mais valor para você daqui pra frente e quero sua ajuda.
+
+No fim da página tem uma área para comentários, deixe um comentário com dicas, criticas, o que você quiser, mas deixe algo para que eu possa continuar aprendendo com essa comunidade tão maravilhosa que é a comunidade em volta da Web.
+
+Muito Obrigado =)
