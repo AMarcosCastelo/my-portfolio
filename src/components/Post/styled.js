@@ -111,7 +111,7 @@ export const MainContent = styled.section`
   }
   img {
     display: block;
-    max-width: 100%;
+    max-width: max-content;
     margin: 1.875rem auto;
   }
   iframe {
