@@ -24,3 +24,9 @@ E em um pouco mais de um ano de estudos e foco eu consegui um emprego na área p
 ## Mas e o Blog?
 
 O ano em que escrevo essa publicação é 2020, um dos anos mais loucos que já vivi (quem não conhece acha que é o experiente da vida), o ano em que a pandemia de Coronavírus fez com que o mundo ficasse em quarentena e toda a economia sofresse com isso, fazendo com que empresas dessem uma pausa e pessoas perdessem seus empregos.
+
+Felizmente a minha empresa deu só uma pausa, assim me dando bastante tempo livre. Nesse tempo livre pensei em como melhorar minhas skills e como divulgar isso para que a comunidade possa ver e de certa forma, ajudar eles assim como eles me ajudaram. 
+
+Tentarei criar tutoriais e até publicações relatando experiencias que passei, assim encorajando mais pessoas a entrar nesse mundo incrível que é a web.
+
+Uma outra razão é que tenho certeza de que vou aprender muito fazendo isso e isso vai me ajudar a longo prazo.
