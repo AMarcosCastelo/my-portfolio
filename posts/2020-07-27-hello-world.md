@@ -2,7 +2,7 @@
 title: Hello World
 description: "Um pouco sobre minha trajetória até a criação desse portfólio/blog. "
 date: 2020-07-27T04:11:00.000Z
-image: /assets/img/hello-world.jpg
+image: /assets/img/hello-world.png
 category: dev
 ---
 **Hello world**, hoje é um dia especial para mim, o dia em que escrevo meu primeiro post no meu blog e começo a divulgar meu portfólio com um pouco mais de um ano e meio como Desenvolvedor Web.
