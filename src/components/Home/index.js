@@ -39,10 +39,9 @@ const Home = () => {
         <S.HomeGroup>
           <S.HomeTitle id="title">
             Olá, <br /> eu sou Antonio Marcos, <br /> Desenvolvedor Web <br />{" "}
-            Front End
           </S.HomeTitle>
           <S.HomeDescription id="desc">
-            Desenvolvedor Front-End | Freelancer
+            Desenvolvedor Front-End
           </S.HomeDescription>
           <BtnContact />
         </S.HomeGroup>
