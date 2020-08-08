@@ -21,3 +21,11 @@ Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitH
 * [Algolia](https://www.algolia.com/) - Para a criação do sistema de busca.
 * [Styled Components](https://styled-components.com/) - Para trabalhar com CSS dentro do JavaScript.
 * [Styled Icons](https://styled-icons.js.org/) - Para importação dos ícones em SVG.
+
+
+
+## Gatsby
+
+Gatsby é um SSG (Static Site Generator), mas com o plus de ser totalmente baseado em React, gratuito, open source e utiliza o GraphQL para consumir todo o conteúdo e os assets.
+
+O Gatsby contém algumas ferramentas excelentes que o diferencia de outros SSG. Primeir
