@@ -28,4 +28,4 @@ Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitH
 
 Gatsby é um SSG (Static Site Generator), mas com o plus de ser totalmente baseado em React, gratuito, open source e utiliza o GraphQL para consumir todo o conteúdo e os assets.
 
-O Gatsby contém algumas ferramentas excelentes que o diferencia de outros SSG. Primeir
+O Gatsby contém algumas ferramentas excelentes que o diferencia de outros SSG. Primeiro, ele é baseado em React em tempo de desenvolvimento e isso é uma ótima escolha pra quem ama trabalhar com React igual a mim. Segundo, ele possuí milhares de plugins que fornecem soluções do dia-a-dia, assim o dev perde menos tempo com tarefas chatas e sobra mais tempo pra focar no essencial da aplicação. Terceiro, por gerar arquivos estáticos e ter sistemas de cache, a performance é perfeita.
