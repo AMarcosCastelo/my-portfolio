@@ -121,7 +121,6 @@ Um exemplo básico:
 
 ```javascript
 import styled from "styled-components";
-import media from 'styled-media-query';
 
 export const AboutHeader = styled.header`
   color: #fff;
