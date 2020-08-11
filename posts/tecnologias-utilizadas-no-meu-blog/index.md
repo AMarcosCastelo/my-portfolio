@@ -89,11 +89,9 @@ O SVG é responsivo e não perde resolução em diferentes tamanhos de telas, ou
 
 Ele é interativo e estilizável via CSS, além de ser adaptativo, você pode modificar o SVG de varias maneiras via CSS.
 
-Um exemplo simples de um loading feito com SVG e CSS: [Loading](https://codepen.io/AMarcos/pen/JjXYvGq).
-
 ## GreenSock
 
-![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](greensock.gif "GreenSock")
+![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](greensocklogo.png "GreenSock")
 
 O [GreenSock](https://greensock.com/) é uma biblioteca para animação que interage com qualquer coisa que o JavaScript pode manipular (propriedades CSS, SVG, canvas, o que for), além de resolver inúmeras inconsistências do navegador.
 
