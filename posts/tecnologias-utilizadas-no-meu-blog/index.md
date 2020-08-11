@@ -89,6 +89,8 @@ O SVG é responsivo e não perde resolução em diferentes tamanhos de telas, ou
 
 Ele é interativo e estilizável via CSS, além de ser adaptativo, você pode modificar o SVG de varias maneiras via CSS.
 
+Um exemplo simples de um loading feito com SVG e CSS: [Loading](https://codepen.io/AMarcos/pen/JjXYvGq).
+
 ## GreenSock
 
 ![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](greensock.svg "GreenSock")
@@ -105,7 +107,7 @@ Por que usar o GreenSock?
 
 ## Styled Components
 
-![Logo do Styled Components. Imagem de unhas sendo pintado com esmalte.](styled-components.png "Styled Components Logo")
+![Logo do Styled Components. Imagem de unhas sendo pintado com esmalte.](styledcoponents.png "Styled Components Logo")
 
 Um dos maiores problemas no CSS é a especificidade, colisão de classes pode literalmente atrapalhar um projeto e tira o dev do sério.
 
