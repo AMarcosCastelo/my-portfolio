@@ -6,8 +6,6 @@ date: 2020-08-08T02:25:20.000Z
 thumbnail: logos.jpg
 category: dev
 ---
-Olá pessoal, nesse post vou explicar o porquê de ter escolhido cada uma dessas tecnologias, falar um poucos sobre elas e explicar as vantagens e desvantagens. 
-
 Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitHub com o repositório do projeto para vocês darem uma olhada e como o código é aberto, até podem contribuir caso queiram.
 
 ## Tecnologias utilizadas
@@ -77,5 +75,64 @@ E devolve os dados:
       }
     }
   }
+}
+```
+
+## SVG
+
+SVG (Scalable Vector Graphics) é uma linguagem XML para descrever de forma vetorial desenhos bidimensionais, sejam estáticos, dinâmicos ou animados.
+
+No Portfólio/Blog todos os ícones e animações são feitos com SVG em conjunto com o [GreenSock](https://greensock.com/) para animações, que falarei mais adiante neste post.
+
+Mas porque usar SVG e não outros formatos?
+
+Uma das principais vantagens do SVG é o tamanho do arquivo. O peso do arquivo costuma ser bem pequeno e isso pode melhorar usando alguma ferramenta de compactação.
+
+O SVG é responsivo e não perde resolução em diferentes tamanhos de telas, ou seja, mantém a qualidade seja em uma tela de celular ou de uma televisão.
+
+Ele é interativo e estilizável via CSS, além de ser adaptativo, você pode modificar o SVG de varias maneiras via CSS.
+
+## GreenSock
+
+O [GreenSock](https://greensock.com/) é uma biblioteca para animação que interage com qualquer coisa que o JavaScript pode manipular (propriedades CSS, SVG, canvas, o que for), além de resolver inúmeras inconsistências do navegador.
+
+Por que usar o GreenSock?
+
+* É super performático;
+* Compatível com todos os browsers (até o IE8, bixo!);
+* Pode animar qualquer coisa (CSS, SVG, Canvas, HTML, etc);
+* Total controle das animações (pause, avance, reverta, aumente/diminua a velocidade);
+* Api intuitiva e fácil de aprender.
+
+
+
+## Styled Components
+
+Um dos maiores problemas no CSS é a especificidade, colisão de classes pode literalmente atrapalhar um projeto e tira o dev do sério.
+
+Surgiram várias tentativas de resolver esse problema, como o OOCSS, BEM, SMACSS, etc... Infelizmente essas metodologias não são escaláveis por depender da ação humana para funcionar.
+
+O Styled Components permite a gravação de CSS no JavaScript (CSS-in-JS) usando Template Strings com tags. Podemos considerar que ele é um sucessor do CSS Modules, uma maneira de escrever CSS com escopo para um único componente e não vazar para nenhum outro elemento da página.
+
+Um exemplo básico:
+
+```javascript
+import styled from "styled-components";
+import media from 'styled-media-query';
+
+export const AboutHeader = styled.header`
+  color: #fff;
+  margin: auto;
+  padding: 2rem 5rem;
+`;
+```
+
+Código gerado automáticamente:
+
+```css
+.styled__AboutHeader-kiNEpj {
+    color: #fff;
+    margin: auto;
+    padding: 2rem 5rem;
 }
 ```
