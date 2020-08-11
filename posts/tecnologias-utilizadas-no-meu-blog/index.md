@@ -26,12 +26,27 @@ Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitH
 
 ## Gatsby
 
+![Logo do GatsbyJS. Um "G" seguido do nome "Gatsby" em um fundo roxo.](website-rebuilt-in-gatsbyjs.png "GatsbyJS")
 
-
-Gatsby é um SSG (Static Site Generator), com o plus de ser totalmente baseado em React, gratuito, open source e utiliza o GraphQL para consumir todo o conteúdo e os assets.
+[Gatsby](https://www.gatsbyjs.org/) é um SSG (Static Site Generator), com o plus de ser totalmente baseado em React, gratuito, open source e utiliza o GraphQL para consumir todo o conteúdo e os assets.
 
 O Gatsby contém algumas ferramentas excelentes que o diferencia de outros SSG. Primeiro, ele é baseado em React em tempo de desenvolvimento, o que é uma ótima escolha pra quem ama trabalhar com React igual a mim. Segundo, ele possuí milhares de plugins que fornecem soluções do dia-a-dia, assim o dev perde menos tempo com tarefas chatas e sobra mais tempo pra focar no essencial da aplicação. Terceiro, por gerar arquivos estáticos e ter sistemas de cache, a performance é perfeita.
 
 Mas como sempre, não existe bala de prata no mundo Web, para projetos com um volume grande de conteúdo dinâmico ele não é uma boa escolha.
 
 ## GraphQL
+
+![Logo do GatsbyJS. Escrito "GraphQL".](graphql.png "GraphQL")
+
+O [GraphQL](https://graphql.org/) foi criado pelo Facebook e é uma das mais modernas maneiras de construir e consultar APIs. Ele é uma sintaxe que descreve como solicitar dados e geralmente é usado para carregar dados de um servidor para um client.
+
+GraphQL possui algumas características principais:
+
+* Permite que o client especifique exatamente quais dados precisa. Isso torna mais fácil agregar dados de várias fontes;
+* Usa um sistema de tipos para descrever os dados.
+
+Uma consulta GraphQL é uma string que é enviada para o servidor para ser interpretada e assim preenchida, retornando o JSON de volta ao client:
+
+```javascript
+
+```
