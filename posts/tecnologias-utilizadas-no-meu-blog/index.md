@@ -127,7 +127,7 @@ export const AboutHeader = styled.header`
 `;
 ```
 
-Código gerado automáticamente:
+Código gerado:
 
 ```css
 .styled__AboutHeader-kiNEpj {
@@ -135,4 +135,27 @@ Código gerado automáticamente:
     margin: auto;
     padding: 2rem 5rem;
 }
+```
+
+
+
+## Styled Icons
+
+O [Styled Icons ](https://styled-icons.js.org/)é perfeito. Fornece os pacotes de ícones mais populares como o Font Awesome, Material Design, Octicons, como um Styled Component como todo o suporte TypeScript Types e tree-shaking/Es-Modules.
+
+Assim posso usá-los como componentes:
+
+```jsx
+import React from 'react';
+import { Blog } from "@styled-icons/icomoon/Blog";
+
+const MenuBar = () => {
+  return (
+    <MenuBarItem>
+      <Blog /> //Seu ícone estará disponível em SVG de forma simples
+    </MenuBarItem>
+  );
+};
+
+export default MenuBar;
 ```
