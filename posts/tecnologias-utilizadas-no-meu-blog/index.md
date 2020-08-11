@@ -48,17 +48,18 @@ GraphQL possui algumas características principais:
 Uma consulta GraphQL é uma string que é enviada para o servidor para ser interpretada e assim preenchida, retornando o JSON de volta ao client:
 
 ```javascript
-query MyPost {
-  markdownRemark {
-    fields {
-      slug
+export const query = graphql`
+  query MyPost {
+    markdownRemark {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        description
+      }
     }
-    frontmatter {
-      title
-      description
-    }
-  }
-}
+  }`;
 ```
 
 E devolve os dados:
