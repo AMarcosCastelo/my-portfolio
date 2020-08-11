@@ -20,8 +20,6 @@ Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitH
 * [Netlify CMS ](https://www.netlifycms.org/)- Gerenciador de conteúdo, open source, de fácil implementação com o Gatsby
 * [Netlify](https://www.netlify.com/) - *Static hosting* para a publicação do blog direto do GitHub.
 
-
-
 ## Gatsby
 
 ![Logo do GatsbyJS. Um "G" seguido do nome "Gatsby" em um fundo roxo.](website-rebuilt-in-gatsbyjs.png "GatsbyJS")
@@ -63,7 +61,6 @@ export const query = graphql`
 E devolve os dados:
 
 ```json
-
   "data": {
     "markdownRemark": {
       "fields": {
@@ -104,8 +101,6 @@ Por que usar o GreenSock?
 * Total controle das animações (pause, avance, reverta, aumente/diminua a velocidade);
 * Api intuitiva e fácil de aprender.
 
-
-
 ## Styled Components
 
 Um dos maiores problemas no CSS é a especificidade, colisão de classes pode literalmente atrapalhar um projeto e tira o dev do sério.
@@ -137,8 +132,6 @@ Código gerado:
 }
 ```
 
-
-
 ## Styled Icons
 
 O [Styled Icons ](https://styled-icons.js.org/)é perfeito. Fornece os pacotes de ícones mais populares como o Font Awesome, Material Design, Octicons, como um Styled Component como todo o suporte TypeScript Types e tree-shaking/Es-Modules.
@@ -159,3 +152,31 @@ const MenuBar = () => {
 
 export default MenuBar;
 ```
+
+## Algolia
+
+Usei o [Algolia](https://www.algolia.com/) para a criação do sistema de busca de post do meu blog.
+
+Ele disponibiliza softwares e ferramentas incríveis para a implementação de um sistema de pesquisa eficiente, flexível e bem criteriosa de maneira fácil de implementar, com uma boa documentação e o melhor de tudo: **Gratuito**.
+
+Ele tbm oferece uma biblioteca chamada [InstantSearch](https://www.algolia.com/doc/guides/building-search-ui/getting-started/react/) que permite criar uma experiência de resultados de pesquisa instantânea usando as APIs do Algolia toda vez que executo `gatsby build`.
+
+## Netlify CMS
+
+É muito legal escrever com Markdown. Markdown é uma sintaxe usada para padronizar e facilitar formatação de texto na web. Os meus posts são todos estilizados com Markdown, porém algumas pessoas têm dificuldades de trabalhar com ele (tipo eu, rs) e aí vem a beleza do Netlify CMS.
+
+O [Netlify CMS ](https://www.netlifycms.org/)é um sistema de gerenciamento da própria Netlify, open source e fácil de implementar em qualquer gerador de site estático.
+
+Aqui está um exemplo do meu CMS:
+
+Ele é um SPA (Single Page Application), aceita upload de imagens e tem até estágios para draft, review e ready do meu conteúdo:
+
+## Netlify
+
+E até que enfim chegamos na hospedagem do meu Portfólio/Blog no [Netlify](https://www.netlify.com/).
+
+O Netlify é uma plataforma de *static hosting* (servidor para arquivos estáticos), onde você tem diversas funcionalidades legais e é **Gratuito!** Mas por que o Netlify e não o [GitHub Pages](https://pages.github.com/), por exemplo?
+
+* Ele é incrivelmente rápido. Você consegue fazer deploy de uma aplicação em segundos.
+* Deploy Atômico e Rollback. Se você fizer o deploy-1 e o deploy-2, eles coexistem e se eu quiser fazer o rollback entre esses deploys, eu consigo.
+* Notificações
