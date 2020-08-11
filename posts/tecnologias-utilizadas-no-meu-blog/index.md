@@ -177,6 +177,30 @@ E até que enfim chegamos na hospedagem do meu Portfólio/Blog no [Netlify](http
 
 O Netlify é uma plataforma de *static hosting* (servidor para arquivos estáticos), onde você tem diversas funcionalidades legais e é **Gratuito!** Mas por que o Netlify e não o [GitHub Pages](https://pages.github.com/), por exemplo?
 
-* Ele é incrivelmente rápido. Você consegue fazer deploy de uma aplicação em segundos.
-* Deploy Atômico e Rollback. Se você fizer o deploy-1 e o deploy-2, eles coexistem e se eu quiser fazer o rollback entre esses deploys, eu consigo.
-* Notificações
+* Ele é incrivelmente rápido. Você consegue fazer deploy de uma aplicação em segundos;
+* Deploy Atômico e Rollback. Se você fizer o deploy-1 e o deploy-2, eles coexistem e se eu quiser fazer o rollback entre esses deploys, eu consigo;
+* Notificações e Permalinks. Você pode configurar para que cada deploy seja notificado no seu GitHub ou até no Slack. Nessas notificações tem os Permalinks, que são links únicos para o nome da branch ou do commit;
+* Branch Deploys e Subdomínios. Você pode fazer deploys de quantas branchs você quiser, caso você tenha uma branch de testes você tem a opção de criar um subdomínio para essa branch.
+* Possibilita testes A/B;
+* Builds Contextuais. Para cada ambiente eu consigo definir um conjunto de comandos que eu quero que seja executado;
+* SSL de um jeito fácil! Ao clicar em 1 botão, você ativa o SSL do seu site;
+* Integração Continua. Você pode mandar rodar os seus testes dentro do Netlify e se passar ele faz o build;
+* Otimização de Assets, entre outras ferramentas incríveis.
+
+Para mim, o Netlify é uma das melhores tecnologias desta lista. Eu já migrei mais 2 projetos meus para lá e penso em utilizá-lo por muito mais tempo.
+
+## Conclusão
+
+Nossa! Post longo e ainda não deu pra falar tudo que deveria ter falado. 
+
+As tecnologias aqui são tão perfeitas que valem um post para cada uma delas.
+
+Para quem leu até aqui tem mais uma coisinha...
+
+Para a criação do meu Blog eu me baseei em um curso perfeito do [Willian Justem](https://willianjusten.com.br/). Vou deixar aqui o [link do curso](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/). Vale muito a pena investir, o cara é muito bom no que faz e o curso é muito bom.
+
+Por enquanto é só isso, povo.
+
+Até a próxima!
+
+[](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/)
