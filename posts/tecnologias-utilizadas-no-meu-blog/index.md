@@ -91,6 +91,8 @@ Ele é interativo e estilizável via CSS, além de ser adaptativo, você pode mo
 
 ## GreenSock
 
+![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](greensock.svg "GreenSock")
+
 O [GreenSock](https://greensock.com/) é uma biblioteca para animação que interage com qualquer coisa que o JavaScript pode manipular (propriedades CSS, SVG, canvas, o que for), além de resolver inúmeras inconsistências do navegador.
 
 Por que usar o GreenSock?
@@ -99,9 +101,11 @@ Por que usar o GreenSock?
 * Compatível com todos os browsers (até o IE8, bixo!);
 * Pode animar qualquer coisa (CSS, SVG, Canvas, HTML, etc);
 * Total controle das animações (pause, avance, reverta, aumente/diminua a velocidade);
-* Api intuitiva e fácil de aprender.
+* API intuitiva e fácil de aprender.
 
 ## Styled Components
+
+![Logo do Styled Components. Imagem de unhas sendo pintado com esmalte.](styled-components.png "Styled Components Logo")
 
 Um dos maiores problemas no CSS é a especificidade, colisão de classes pode literalmente atrapalhar um projeto e tira o dev do sério.
 
@@ -154,6 +158,8 @@ export default MenuBar;
 ```
 
 ## Algolia
+
+![Algolia logo. Logo com a imagem de um cronometro e a palavra "Algolia" ao lado.](algolia-vector-logo.png "Algolia logo.")
 
 Usei o [Algolia](https://www.algolia.com/) para a criação do sistema de busca de post do meu blog.
 
