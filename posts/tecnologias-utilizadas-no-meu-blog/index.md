@@ -93,7 +93,7 @@ Um exemplo simples de um loading feito com SVG e CSS: [Loading](https://codepen.
 
 ## GreenSock
 
-![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](greensock.svg "GreenSock")
+![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](greensock.gif "GreenSock")
 
 O [GreenSock](https://greensock.com/) é uma biblioteca para animação que interage com qualquer coisa que o JavaScript pode manipular (propriedades CSS, SVG, canvas, o que for), além de resolver inúmeras inconsistências do navegador.
 
