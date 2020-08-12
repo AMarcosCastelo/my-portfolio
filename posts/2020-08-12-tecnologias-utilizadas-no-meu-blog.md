@@ -2,8 +2,8 @@
 title: Tecnologias utilizadas no meu Portfólio/Blog
 description: Neste post eu listo todas as tecnologias usadas no meu
   Portfolio/Blog e falo um pouco sobre cada uma delas.
-date: 2020-08-08T02:25:20.000Z
-thumbnail: logos.jpg
+date: 2020-08-12T11:20:20.000Z
+thumbnail: /assets/img/logos.jpg
 category: dev
 ---
 Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitHub com o repositório do projeto para vocês darem uma olhada e como o código é aberto, até podem contribuir caso queiram.
@@ -22,7 +22,7 @@ Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitH
 
 ## Gatsby
 
-![Logo do GatsbyJS. Um "G" seguido do nome "Gatsby" em um fundo roxo.](website-rebuilt-in-gatsbyjs.png "GatsbyJS")
+![Logo do GatsbyJS. Um "G" seguido do nome "Gatsby" em um fundo roxo.](/assets/img/website-rebuilt-in-gatsbyjs.png "GatsbyJS")
 
 [Gatsby](https://www.gatsbyjs.org/) é um SSG (Static Site Generator), com o plus de ser totalmente baseado em React, gratuito, open source e utiliza o GraphQL para consumir todo o conteúdo e os assets.
 
@@ -32,7 +32,7 @@ Mas como sempre, não existe bala de prata no mundo Web, para projetos com um vo
 
 ## GraphQL
 
-![Logo do GatsbyJS. Escrito "GraphQL".](graphql.png "GraphQL")
+![Logo do GatsbyJS. Escrito "GraphQL".](/assets/img/graphql.png "GraphQL")
 
 O [GraphQL](https://graphql.org/) foi criado pelo Facebook e é uma das mais modernas maneiras de construir e consultar APIs. Ele é uma sintaxe que descreve como solicitar dados e geralmente é usado para carregar dados de um servidor para um client.
 
@@ -95,7 +95,7 @@ Segue um exemplo de um loading animado criado com SVG e CSS:
 
 ## GreenSock
 
-![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](greensocklogo.png "GreenSock")
+![Logo GreenSock. Um homem com uma capa parecido com um herói, e a palavra "GreenSock"](/assets/img/greensocklogo.png "GreenSock")
 
 O [GreenSock](https://greensock.com/) é uma biblioteca para animação que interage com qualquer coisa que o JavaScript pode manipular (propriedades CSS, SVG, canvas, o que for), além de resolver inúmeras inconsistências do navegador.
 
@@ -109,7 +109,7 @@ Por que usar o GreenSock?
 
 ## Styled Components
 
-![Logo do Styled Components. Imagem de unhas sendo pintado com esmalte.](styledcoponents.png "Styled Components Logo")
+![Logo do Styled Components. Imagem de unhas sendo pintado com esmalte.](/assets/img/styledcoponents.png "Styled Components Logo")
 
 Um dos maiores problemas no CSS é a especificidade, colisão de classes pode literalmente atrapalhar um projeto e tirar o dev do sério.
 
@@ -162,7 +162,7 @@ export default MenuBar;
 
 ## Algolia
 
-![Algolia logo. Logo com a imagem de um cronometro e a palavra "Algolia" ao lado.](algolia-vector-logo.png "Algolia logo.")
+![Algolia logo. Logo com a imagem de um cronometro e a palavra "Algolia" ao lado.](/assets/img/algolia-vector-logo.png "Algolia logo.")
 
 Usei o [Algolia](https://www.algolia.com/) para a criação do sistema de busca de posts do meu blog.
 
@@ -180,15 +180,15 @@ O [Netlify CMS ](https://www.netlifycms.org/)é um CMS da própria Netlify, open
 
 Aqui está um exemplo do meu CMS:
 
-![Imagem do CMS com um post.](screen-shot-2020-08-12-at-10.15.07.png "Netlify CMS")
+![Imagem do CMS com um post.](/assets/img/screen-shot-2020-08-12-at-10.15.07.png "Netlify CMS")
 
 Ele é um SPA (Single Page Application), aceita upload de imagens e tem até estágios para Draft, In Review e Ready do meu conteúdo:
 
-![Imagem do workflow de conteúdo.](screen-shot-2020-08-12-at-10.20.34.png "Netlify CMS")
+![Imagem do workflow de conteúdo.](/assets/img/screen-shot-2020-08-12-at-10.20.34.png "Netlify CMS")
 
 ## Netlify
 
-![Logo do Netlify. Um quadrado cheio de riscos com a palavra "Netlify" ao lado.](netlifylogo.png "Netlify Logo")
+![Logo do Netlify. Um quadrado cheio de riscos com a palavra "Netlify" ao lado.](/assets/img/netlifylogo.png "Netlify Logo")
 
 E até que enfim chegamos na hospedagem do meu Portfólio/Blog no [Netlify](https://www.netlify.com/).  
 
