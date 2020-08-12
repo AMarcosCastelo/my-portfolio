@@ -87,7 +87,7 @@ Uma das principais vantagens do SVG é o tamanho do arquivo. O peso do arquivo c
 
 O SVG é responsivo e não perde resolução em diferentes tamanhos de telas, ou seja, mantém a qualidade seja em uma tela de celular ou de uma televisão.
 
-Ele é interativo e estilizável via CSS, além de ser adaptativo, você pode modificar o SVG de varias maneiras via CSS.
+Ele é interativo e estilizável via CSS, além de ser adaptativo, você pode modificar o SVG de varias maneiras.
 
 Segue um exemplo de um loading animado criado com SVG e CSS:
 
@@ -141,7 +141,7 @@ Código gerado:
 
 ## Styled Icons
 
-O [Styled Icons ](https://styled-icons.js.org/)é perfeito. Fornece os pacotes de ícones mais populares como o Font Awesome, Material Design, Octicons, como um Styled Component como todo o suporte TypeScript Types e tree-shaking/Es-Modules.
+O [Styled Icons ](https://styled-icons.js.org/)é perfeito. Fornece os pacotes de ícones mais populares como o Font Awesome, Material Design, Octicons, como um Styled Component, com todo o suporte TypeScript Types e tree-shaking/Es-Modules.
 
 Assim posso usá-los como componentes:
 
@@ -164,11 +164,13 @@ export default MenuBar;
 
 ![Algolia logo. Logo com a imagem de um cronometro e a palavra "Algolia" ao lado.](algolia-vector-logo.png "Algolia logo.")
 
-Usei o [Algolia](https://www.algolia.com/) para a criação do sistema de busca de post do meu blog.
+Usei o [Algolia](https://www.algolia.com/) para a criação do sistema de busca de posts do meu blog.
 
-Ele disponibiliza softwares e ferramentas incríveis para a implementação de um sistema de pesquisa eficiente, flexível e bem criteriosa de maneira fácil de implementar, com uma boa documentação e o melhor de tudo: **Gratuito**.
+Ele disponibiliza softwares e ferramentas incríveis para a implementação de um sistema de pesquisa eficiente, flexível, bem criteriosa, de maneira fácil de implementar, com uma boa documentação e o melhor de tudo: **Gratuito**.
 
-Ele tbm oferece uma biblioteca chamada [InstantSearch](https://www.algolia.com/doc/guides/building-search-ui/getting-started/react/) que permite criar uma experiência de resultados de pesquisa instantânea usando as APIs do Algolia toda vez que executo `gatsby build`.
+Ele também oferece uma biblioteca chamada [InstantSearch](https://www.algolia.com/doc/guides/building-search-ui/getting-started/react/) que permite criar uma experiência de resultados de pesquisa instantânea usando as APIs do Algolia.
+
+E pra facilitar mais ainda, o Gatsby fornece um [plugin](https://github.com/algolia/gatsby-plugin-algolia) muito fácil de instalar que lida com indexação das páginas. Ele envia as páginas do meu Blog para indexação no Algolia toda vez que executo `gatsby build`.
 
 ## Netlify CMS
 
