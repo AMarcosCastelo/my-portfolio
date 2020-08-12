@@ -186,6 +186,8 @@ Ele é um SPA (Single Page Application), aceita upload de imagens e tem até est
 
 ## Netlify
 
+![Logo do Netlify. Um quadrado cheio de riscos com a palavra "Netlify" ao lado.](netlify.png "Netlify Logo")
+
 E até que enfim chegamos na hospedagem do meu Portfólio/Blog no [Netlify](https://www.netlify.com/).  
 
 O Netlify é uma plataforma de *static hosting* (servidor para arquivos estáticos), onde você tem diversas funcionalidades legais e é **Gratuito!** Mas por que o Netlify e não o [GitHub Pages](https://pages.github.com/), por exemplo?
@@ -200,7 +202,7 @@ O Netlify é uma plataforma de *static hosting* (servidor para arquivos estátic
 * Integração Continua. Você pode mandar rodar os seus testes dentro do Netlify e se passar ele faz o build;
 * Otimização de Assets, entre outras ferramentas incríveis.
 
-Para mim, o Netlify é uma das melhores tecnologias desta lista. Eu já migrei mais 2 projetos meus para lá e penso em utilizá-lo por muito mais tempo.
+Para mim, o Netlify é uma das melhores tecnologias desta lista. Eu já migrei mais 2 projetos meus para lá e penso em utilizá-lo por um bom tempo.
 
 ## Conclusão
 
