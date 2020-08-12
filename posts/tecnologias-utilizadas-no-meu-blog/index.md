@@ -178,11 +178,15 @@ O [Netlify CMS ](https://www.netlifycms.org/)é um sistema de gerenciamento da p
 
 Aqui está um exemplo do meu CMS:
 
+![Imagem do CMS com um post.](screen-shot-2020-08-12-at-10.15.07.png "Netlify CMS")
+
 Ele é um SPA (Single Page Application), aceita upload de imagens e tem até estágios para draft, review e ready do meu conteúdo:
+
+![Imagem do workflow de conteúdo.](screen-shot-2020-08-12-at-10.20.34.png "Netlify CMS")
 
 ## Netlify
 
-E até que enfim chegamos na hospedagem do meu Portfólio/Blog no [Netlify](https://www.netlify.com/).
+E até que enfim chegamos na hospedagem do meu Portfólio/Blog no [Netlify](https://www.netlify.com/).  
 
 O Netlify é uma plataforma de *static hosting* (servidor para arquivos estáticos), onde você tem diversas funcionalidades legais e é **Gratuito!** Mas por que o Netlify e não o [GitHub Pages](https://pages.github.com/), por exemplo?
 
