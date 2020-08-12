@@ -10,8 +10,8 @@ import * as S from "../components/Post/styled";
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark;
-  const next = pageContext.nextPost && (pageContext.nextPost.fields.slug !== '/about/' ? pageContext.nextPost : false);
-  const previous= pageContext.previousPost && (pageContext.previousPost.fields.slug !== '/about/' ? pageContext.previousPost : false);
+  const previous = pageContext.nextPost && (pageContext.nextPost.fields.slug !== '/about/' ? pageContext.nextPost : false);
+  const next= pageContext.previousPost && (pageContext.previousPost.fields.slug !== '/about/' ? pageContext.previousPost : false);
 
   return (
     <Layout>
