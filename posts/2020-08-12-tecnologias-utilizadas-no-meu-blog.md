@@ -3,7 +3,7 @@ title: Tecnologias utilizadas no meu Portfólio/Blog
 description: Neste post eu listo todas as tecnologias usadas no meu
   Portfolio/Blog e falo um pouco sobre cada uma delas.
 date: 2020-08-12T11:20:20.000Z
-thumbnail: /assets/img/logos.jpg
+image: /assets/img/logos.jpg
 category: dev
 ---
 Vou deixar aqui o [link](https://github.com/AMarcosCastelo/my-portfolio) do GitHub com o repositório do projeto para vocês darem uma olhada e como o código é aberto, até podem contribuir caso queiram.
