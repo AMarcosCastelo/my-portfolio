@@ -186,7 +186,7 @@ Ele é um SPA (Single Page Application), aceita upload de imagens e tem até est
 
 ## Netlify
 
-![Logo do Netlify. Um quadrado cheio de riscos com a palavra "Netlify" ao lado.](netlify.png "Netlify Logo")
+![Logo do Netlify. Um quadrado cheio de riscos com a palavra "Netlify" ao lado.](netlifylogo.png "Netlify Logo")
 
 E até que enfim chegamos na hospedagem do meu Portfólio/Blog no [Netlify](https://www.netlify.com/).  
 
