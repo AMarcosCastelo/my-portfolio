@@ -176,13 +176,13 @@ E pra facilitar mais ainda, o Gatsby fornece um [plugin](https://github.com/algo
 
 É muito legal escrever com Markdown. Markdown é uma sintaxe usada para padronizar e facilitar formatação de texto na web. Os meus posts são todos estilizados com Markdown, porém algumas pessoas têm dificuldades de trabalhar com ele (tipo eu, rs) e aí vem a beleza do Netlify CMS.
 
-O [Netlify CMS ](https://www.netlifycms.org/)é um sistema de gerenciamento da própria Netlify, open source e fácil de implementar em qualquer gerador de site estático.
+O [Netlify CMS ](https://www.netlifycms.org/)é um CMS da própria Netlify, open source e fácil de implementar em qualquer gerador de site estático.
 
 Aqui está um exemplo do meu CMS:
 
 ![Imagem do CMS com um post.](screen-shot-2020-08-12-at-10.15.07.png "Netlify CMS")
 
-Ele é um SPA (Single Page Application), aceita upload de imagens e tem até estágios para draft, review e ready do meu conteúdo:
+Ele é um SPA (Single Page Application), aceita upload de imagens e tem até estágios para Draft, In Review e Ready do meu conteúdo:
 
 ![Imagem do workflow de conteúdo.](screen-shot-2020-08-12-at-10.20.34.png "Netlify CMS")
 
