@@ -8038,12 +8038,12 @@ gatsby-plugin-sitemap@^2.4.7:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-styled-components@^3.3.5:
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.5.tgz#cbe94d36ed427814bba1ae7ddba69dbcdf092c40"
-  integrity sha512-sv6L2I1Hs0DSNXovT1ieSfpnFKa7JGbYUCx8a4ENmNFtSwqJfS8VCQQUVJ+/dNZIkQy0133POzX8Ht4IuXF4tg==
+gatsby-plugin-styled-components@^3.3.10:
+  version "3.3.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.10.tgz#d325535023695382cf0f209382e5e0cc4658e6e6"
+  integrity sha512-2yV3hanEPelf8IwkOa1Sk4RtHh4tuuvdJs2NCnAsHxYEMLlFC4UeG91z4Q4t69G7RvZ2W8PzdByLK5N5C97CQQ==
   dependencies:
-    "@babel/runtime" "^7.10.2"
+    "@babel/runtime" "^7.10.3"
 
 gatsby-plugin-transition-link@^1.20.2:
   version "1.20.2"
