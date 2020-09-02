@@ -15,6 +15,7 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="lnL4j0Cg9K1DwSVA9TOLT-LXx54Df_RBQ4hIbpNFDVY" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="dark">
