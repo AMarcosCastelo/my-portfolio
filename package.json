@@ -22,7 +22,7 @@
     "gatsby-plugin-transition-link": "^1.20.2",
     "gatsby-remark-images": "^3.3.29",
     "gatsby-remark-lazy-load": "^1.0.2",
-    "gatsby-remark-prismjs": "^3.5.12",
+    "gatsby-remark-prismjs": "^3.5.13",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.29",
     "gatsby-transformer-sharp": "^2.5.14",
