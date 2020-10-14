@@ -7603,10 +7603,10 @@ gatsby-plugin-typescript@^2.4.21:
     "@babel/runtime" "^7.11.2"
     babel-plugin-remove-graphql-queries "^2.9.20"
 
-gatsby-plugin-utils@^0.2.30:
-  version "0.2.30"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.30.tgz#9c26174badbf0f1a8a2ee6c8a084a3dff0f6ccba"
-  integrity sha512-mLFj1nkCf+3rgfMvDaU0o9lTM8EYZeIxeUibBvpUgH1dHTrXNKhE/1tiz/Ep8xTlJ2fwhrv8n4d7Ux4UWtD8xQ==
+gatsby-plugin-utils@^0.2.31:
+  version "0.2.31"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.31.tgz#1398ade3696826ffb6930513c24526386060097c"
+  integrity sha512-z3k+1M/DK+k1k0y0HtkzSYoK6Y00Y1I3KAdQuaFY8q4aA52mddQ7yqEy+mWFfj/sB4fuxCSCJaOfHGNSqomKFw==
   dependencies:
     joi "^17.2.1"
 
@@ -7792,10 +7792,10 @@ gatsby-telemetry@^1.3.38:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-transformer-remark@^2.8.38:
-  version "2.8.38"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.8.38.tgz#2e87df8de3f4dedc9149a1d8f75d5e383985f948"
-  integrity sha512-3zTdLAtawz0WF1aaj/vdhCuuaV1imUzZcZlUuZG0FxtjPOOYsvOOVwe56iN30adLkqZa8XGgr70B/rOUgUs/+A==
+gatsby-transformer-remark@^2.8.39:
+  version "2.8.39"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.8.39.tgz#be14f83ce63342ab1b907718e049e59284dab509"
+  integrity sha512-XVBOtUSJxTFY8XfGqc8q64V3EkXkKd2UaGvWLN+zhH/leywv9BLuW7JTspcHwIdow+a+zzBL9EtR/ptNCSRpQA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     bluebird "^3.7.2"
@@ -7832,10 +7832,10 @@ gatsby-transformer-sharp@^2.5.17:
     semver "^7.3.2"
     sharp "^0.25.4"
 
-gatsby@^2.24.76:
-  version "2.24.76"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.76.tgz#df7bd1b55a85a0200ba8df545460177c1c612305"
-  integrity sha512-nwr1RY30Wf0ci2RRbsnl71mC3QxZ6E4FGuimo0GWxCWnW0U23VNi1Q2yWJF5LXfwS19R0tKVngECnT2b2XQslg==
+gatsby@^2.24.77:
+  version "2.24.77"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.77.tgz#8282f80f2d9c6dc2e547ac86408807df3d2a0609"
+  integrity sha512-OpthIJ3WdzZPbTLY7NSZq2XPt14l9EAVnB4R63a8SNBqeb14mY+Fs2yHAK8mBYSrmwAWN0ZEdGwWJQZGtB5Dhw==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/core" "^7.11.6"
@@ -7910,7 +7910,7 @@ gatsby@^2.24.76:
     gatsby-link "^2.4.15"
     gatsby-plugin-page-creator "^2.3.32"
     gatsby-plugin-typescript "^2.4.21"
-    gatsby-plugin-utils "^0.2.30"
+    gatsby-plugin-utils "^0.2.31"
     gatsby-react-router-scroll "^3.0.14"
     gatsby-telemetry "^1.3.38"
     glob "^7.1.6"
@@ -13750,26 +13750,27 @@ react-input-autosize@^2.2.1:
   dependencies:
     prop-types "^15.5.8"
 
-react-instantsearch-core@^6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.7.0.tgz#a4784bbf0a031b7c04830312fa6bc51f10e612ee"
-  integrity sha512-wIvSIwkWfqPbaQZcbKsfBK3Gpm1e7ahSwU8Bmx1N5RfUqA/NghqS0Ppv3sz4vCXjoEAdPV06R+Fpn9lT+cE9/Q==
+react-instantsearch-core@^6.8.0:
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.8.0.tgz#5a63130d5141f83ac4de72eba011ab6f2606c635"
+  integrity sha512-cSCcGHW8/4fjT0vrTDKnEoqgsNGbqoFSJAdyWlljBHyl2Iqfc3xINpXse6DRJuJGhf/9lZrREqD1/nM/eNc5qg==
   dependencies:
     "@babel/runtime" "^7.1.2"
     algoliasearch-helper "^3.1.0"
     prop-types "^15.5.10"
     react-fast-compare "^3.0.0"
 
-react-instantsearch-dom@^6.6.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.7.0.tgz#1163aa813dfe2e6c5cac77c6f912eeb5b389ba60"
-  integrity sha512-J1C9xkHHLLa6rkKLKFDa7szA0TDo6yPFGmDzh2+JLaq4o694RIqivfUpROHus0Ki3BAQu9QmzLtodf6K1NOBWQ==
+react-instantsearch-dom@^6.8.0:
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.8.0.tgz#efc8a6b797dedba170afa29c8cac3b6982827e44"
+  integrity sha512-Vn06XLKaQZw7eJFl9HCNGUPHU8/1FlPnbEPg+SG68vJ1lSjeKVG2SAdY+o/bzHhVsnJolxBK4XpcqPHHPePJDQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
     algoliasearch-helper "^3.1.0"
     classnames "^2.2.5"
     prop-types "^15.5.10"
-    react-instantsearch-core "^6.7.0"
+    react-fast-compare "^3.0.0"
+    react-instantsearch-core "^6.8.0"
 
 react-is@16.13.1, react-is@^16.12.0, react-is@^16.6.0, react-is@^16.6.3, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.9.0:
   version "16.13.1"
